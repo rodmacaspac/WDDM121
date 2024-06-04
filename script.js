@@ -5,7 +5,7 @@ const countryid = "1161";
 const getTeams = async () => {
   try {
     const response = await fetch(
-      `https://cors-anywhere.herokuapp.com/https://api.sportmonks.com/v3/football/fixtures?api_token=${API_KEY}`
+      `https://cors-anywhere.herokuapp.com/https://api.sportmonks.com/v3/football/fixtures?page=10?api_token=${API_KEY}`
       //`https://cors-anywhere.herokuapp.com/https://api.sportmonks.com/v3/football/teams/countries/${countryid}?api_token=${API_KEY}`
     );
     if (!response.ok) {
@@ -20,7 +20,34 @@ const getTeams = async () => {
 };
 
 // Fetch and log the teams to find the team ID
-getTeams();
+//getTeams();
+
+const getLatestFixtures = async () => {
+  try {
+    // Get today's date
+    const today = new Date();
+    const endDate = today.toISOString().split("T")[0]; // Format: YYYY-MM-DD
+    // Set the start date to fetch matches from a week ago
+    const startDate = new Date(today.setDate(today.getDate() - 50))
+      .toISOString()
+      .split("T")[0]; // Format: YYYY-MM-DD
+
+    const response = await fetch(
+      `https://cors-anywhere.herokuapp.com/https://api.sportmonks.com/v3/football/fixtures/between/${startDate}/${endDate}?api_token=${API_KEY}`
+    );
+    if (!response.ok) {
+      throw new Error("Network response was not ok " + response.statusText);
+    }
+    const data = await response.json();
+    console.log(data);
+    displayFixtures(data);
+  } catch (error) {
+    console.error("Error fetching latest fixtures:", error);
+  }
+};
+
+// Fetch and display the latest fixtures
+getLatestFixtures();
 
 const displayFixtures = (data) => {
   //const fixtures = JSON.parse(jsonResponse).data;
@@ -57,4 +84,3 @@ const displayFixtures = (data) => {
     fixtureListDiv.appendChild(fixtureDiv);
   });
 };
-
