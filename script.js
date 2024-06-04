@@ -33,7 +33,7 @@ const getLatestFixtures = async () => {
       .split("T")[0]; // Format: YYYY-MM-DD
 
     const response = await fetch(
-      `https://cors-anywhere.herokuapp.com/https://api.sportmonks.com/v3/football/fixtures/between/${startDate}/${endDate}?api_token=${API_KEY}`
+      `https://cors-anywhere.herokuapp.com/https://api.sportmonks.com/v3/football/fixtures/between/${startDate}/${endDate}?api_token=${API_KEY}&include=venue;`
     );
     if (!response.ok) {
       throw new Error("Network response was not ok " + response.statusText);
@@ -75,6 +75,8 @@ const displayFixtures = (data) => {
                   fixture.starting_at
                 )}</p>
                 <p><strong>Result Info:</strong> ${fixture.result_info}</p>
+                <p><strong>Venue:</strong> ${fixture.venue.name}</p>
+                <p><strong>Address:</strong> ${fixture.venue.address}</p>
             `;
 
     // Set the HTML content to the fixture div
