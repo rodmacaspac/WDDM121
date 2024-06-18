@@ -1,0 +1,2260 @@
+/* Styling for elements with class .contact3, .goalieswatch3, .logo-icon3 */
+.contact3,
+.goalieswatch3,
+.logo-icon3 {
+  position: absolute;
+  margin: 0 !important;
+  cursor: pointer;
+}
+
+/* Styling specifically for .logo-icon3 */
+.logo-icon3 {
+  width: 125.2px;
+  height: 133.5px;
+  top: -21px;
+  left: -25px;
+  object-fit: contain;
+  z-index: 2;
+}
+
+/* Styling for .contact3 and .goalieswatch3 */
+.contact3,
+.goalieswatch3 {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  z-index: 1;
+}
+
+/* Additional styling for .goalieswatch3 */
+.goalieswatch3 {
+  height: 48px;
+  width: 296px;
+  top: 22px;
+  left: -29.2px;
+  white-space: nowrap;
+}
+
+/* Styling for .contact3 */
+.contact3 {
+  height: 42px;
+  width: 199px;
+  right: -40px;
+  bottom: 17px;
+  font-size: var(--font-size-5xl); /* Using a CSS custom property */
+}
+
+/* Styling for .about-us5 */
+.about-us5 {
+  text-decoration: none;
+  align-self: stretch;
+  height: 42px;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  white-space: nowrap;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* Styling for .about-us4 */
+.about-us4 {
+  width: 129px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-2xs) 0 0; /* Using a CSS custom property */
+  box-sizing: border-box;
+}
+
+/* Styling for .team-standings3 and .upcoming-match3 */
+.team-standings3,
+.upcoming-match3 {
+  text-decoration: none;
+  height: 42px;
+  position: relative;
+  color: inherit;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+/* Styling for .team-standings3 */
+.team-standings3 {
+  width: 219px;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+/* Styling for .upcoming-match3 */
+.upcoming-match3 {
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Styling for .navigation1 and .team-info2 */
+.navigation1,
+.team-info2 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 100%;
+  text-align: left;
+  color: var(--white); /* Using a CSS custom property */
+  font-family: var(--font-poppins); /* Using a CSS custom property */
+}
+
+/* Styling for .team-info2 */
+.team-info2 {
+  margin: 0;
+  flex: 1;
+  background-color: var(--color-gray-600); /* Using a CSS custom property */
+  justify-content: center;
+  padding: var(--padding-15xl) var(--padding-xl) var(--padding-mid) 458px; /* Using a CSS custom property */
+  box-sizing: border-box;
+  font-size: var(--font-size-5xl); /* Using a CSS custom property */
+}
+
+/* Styling for .navigation1 */
+.navigation1 {
+  width: 1339.8px;
+  justify-content: flex-start;
+  position: relative;
+  font-size: var(--font-size-11xl); /* Using a CSS custom property */
+}
+
+/* Styling for .club-icon */
+.club-icon {
+  margin-top: -7.5px;
+  height: 158px;
+  width: 158px;
+  position: relative;
+  border-radius: var(--br-58xl-4); /* Using a CSS custom property */
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* Styling for .image-icon */
+.image-icon {
+  position: absolute;
+  top: 22.5px;
+  left: 33.1px;
+  width: 89px;
+  height: 118px;
+  object-fit: contain;
+}
+
+/* Styling for .club, .image-icon1 */
+.club {
+  margin-top: -7.5px;
+  height: 158px;
+  width: 158px;
+  position: relative;
+  border-radius: var(--br-58xl-4); /* Using a CSS custom property */
+  background-color: var(--color-whitesmoke-200); /* Using a CSS custom property */
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* Styling for .image-icon1 */
+.image-icon1 {
+  position: absolute;
+  top: 22.5px;
+  left: 30.2px;
+  width: 98px;
+  height: 118px;
+  object-fit: contain;
+}
+
+/* Styling for .club1, .image-icon2 */
+.club1 {
+  margin-top: -7.5px;
+  height: 158px;
+  width: 158px;
+  position: relative;
+  border-radius: var(--br-58xl-4); /* Using a CSS custom property */
+  background-color: var(--color-whitesmoke-200); /* Using a CSS custom property */
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* Styling for .image-icon2 */
+.image-icon2 {
+  position: absolute;
+  top: 22.5px;
+  left: 35.3px;
+  width: 87px;
+  height: 118px;
+  object-fit: contain;
+}
+
+/* Styling for .club2, .image-icon3 */
+.club2 {
+  margin-top: -7.5px;
+  height: 158px;
+  width: 158px;
+  position: relative;
+  border-radius: var(--br-58xl-4); /* Using a CSS custom property */
+  background-color: var(--color-whitesmoke-200); /* Using a CSS custom property */
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* Styling for .image-icon3 */
+.image-icon3 {
+  position: absolute;
+  top: 22.5px;
+  left: 22.5px;
+  width: 115px;
+  height: 118px;
+  object-fit: contain;
+}
+
+/* Styling for .club3, .imgae-icon */
+.club3 {
+  margin-top: -7.5px;
+  height: 158px;
+  width: 158px;
+  position: relative;
+  border-radius: var(--br-58xl-4); /* Using a CSS custom property */
+  background-color: var(--color-whitesmoke-200); /* Using a CSS custom property */
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* Styling for .imgae-icon */
+.imgae-icon {
+  position: absolute;
+  top: 20.5px;
+  left: 22.6px;
+  width: 112px;
+  height: 126px;
+  object-fit: contain;
+}
+
+/* Styling for .club-icon1, .club4 */
+.club-icon1,
+.club4 {
+  height: 158px;
+  width: 158px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 79px);
+  border-radius: var(--br-58xl-4); /* Using a CSS custom property */
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+/* Styling for .club4 */
+.club4 {
+  right: -166.4px;
+  background-color: var(--color-whitesmoke-200); /* Using a CSS custom property */
+}
+
+/* Styling for .club-icon1 */
+.club-icon1 {
+  right: -339.3px;
+}
+
+/* Styling for .image-icon4 */
+.image-icon4 {
+  position: absolute;
+  top: 22.5px;
+  left: 51.8px;
+  width: 57px;
+  height: 118px;
+  object-fit: contain;
+}
+
+/* Styling for .club5 */
+.club5 {
+  height: 158px;
+  width: 158px;
+  position: absolute;
+  margin: 0 !important;
+  top: calc(50% - 79px);
+  right: -512.2px;
+  border-radius: var(--br-58xl-4); /* Using a CSS custom property */
+  background-color: var(--color-whitesmoke-200); /* Using a CSS custom property */
+  overflow: hidden;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+/* Styling for .follow-club and .follow-club-wrapper */
+.follow-club,
+.follow-club-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* Styling for .follow-club */
+.follow-club {
+  height: 143px;
+  padding: 0 var(--padding-7xs) 0 0; /* Using a CSS custom property */
+  position: relative;
+  gap: 14.9px;
+  cursor: pointer;
+}
+
+/* Styling for .follow-club-wrapper */
+.follow-club-wrapper {
+  padding: 0 var(--padding-xl) 16.1px 0; /* Using a CSS custom property */
+}
+
+/* Styling for .standings1 */
+.standings1 {
+  align-self: stretch;
+  position: relative;
+  font-weight: 600;
+}
+
+/* Styling for .image-icon5 and .image-icon6 */
+.image-icon5,
+.image-icon6 {
+  height: 25.8px;
+  width: 25.8px;
+  position: relative;
+  border-radius: 50%;
+  object-fit: cover;
+  min-height: 26px;
+}
+
+/* Styling for .image */
+.image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-6xs-5); /* Using a CSS custom property */
+}
+
+/* Styling for .premier-league1 */
+.premier-league1 {
+  position: relative;
+  font-weight: 500;
+}
+
+/* Styling for .view-all-button */
+.view-all-button {
+  height: 19.4px;
+  width: 19.4px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* Styling for .league and .title */
+.league,
+.title {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
+/* Styling for .title */
+.title {
+  padding: 0 var(--padding-588xl) 0 0; /* Using a CSS custom property */
+  box-sizing: border-box;
+  gap: var(--gap-9xs-2); /* Using a CSS custom property */
+  min-width: 111px;
+}
+
+/* Styling for .league */
+.league {
+  gap: var(--gap-smi-9); /* Using a CSS custom property */
+}
+
+/* Styling for .view-all1 */
+.view-all1 {
+  flex: 1;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* Styling for .ranking-table-icon */
+.ranking-table-icon {
+  height: 19.4px;
+  width: 19.4px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* Styling for .view-all */
+.view-all {
+  width: 75px;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: var(--font-size-smi-9); /* Using a CSS custom property */
+}
+
+/* Styling for .club6, .ttile, .view-all */
+.club6,
+.ttile,
+.view-all {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for .ttile */
+.ttile {
+  align-self: stretch;
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 100%;
+  row-gap: 20px; /* Using a CSS custom property */
+  font-size: var(--font-size-smi-2); /* Using a CSS custom property */
+  color: var(--white); /* Using a CSS custom property */
+}
+
+/* Styling for .club6 */
+.club6 {
+  width: 313.5px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* Styling for .d, .l, .point, .w */
+.d,
+.l,
+.point,
+.w {
+  flex: 1;
+  position: relative;
+}
+
+/* Styling for .match-location */
+.match-location {
+  width: 216.5px;
+  flex-direction: row;
+  justify-content: center;
+  font-size: var(--font-size-mini-4); /* Using a CSS custom property */
+}
+
+/* Styling for .fixtures-title, .last-match, .match-location */
+.fixtures-title,
+.last-match,
+.match-location {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for .last-match */
+.last-match {
+  width: 118px;
+  position: relative;
+  flex-shrink: 0;
+}
+
+/* Styling for .fixtures-title */
+.fixtures-title {
+  width: 821.2px;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 7.3px var(--padding-6xs) 7.1px; /* Using a CSS custom property */
+  box-sizing: border-box;
+  gap: 79.4px; /* Using a CSS custom property */
+  text-align: left;
+  font-size: var(--font-size-smi-2); /* Using a CSS custom property */
+  color: var(--white); /* Using a CSS custom property */
+}
+
+/* Styling for .logo-image */
+.logo-image {
+  position: relative;
+  font-weight: 500;
+}
+
+/* Styling for .logo-icon4 */
+.logo-icon4 {
+  height: 25.8px;
+  width: 25.8px;
+  position: relative;
+  object-fit: cover;
+}
+
+/* Styling for .chelsea-fc, .club7 */
+.chelsea-fc,
+.club7 {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for .chelsea-fc */
+.chelsea-fc {
+  width: 269.4px;
+  position: relative;
+  font-weight: 500;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+/* Styling for .club7 */
+.club7 {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-smi-9); /* Using a CSS custom property */
+  max-width: 100%;
+}
+
+/* Styling for .icon-image, .last-match1, .match-info1, .match-result */
+.icon-image,
+.last-match1,
+.match-info1,
+.match-result {
+  flex: 1;
+  position: relative;
+}
+
+/* Styling for .poin */
+.poin {
+  width: 193.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+/* Styling for .fixtures-container-icon, .fixtures-header-icon, .scrolling-container-icon, .vector-icon, .vector-icon1 */
+.fixtures-container-icon,
+.fixtures-header-icon,
+.scrolling-container-icon,
+.vector-icon,
+.vector-icon1 {
+  height: 16.1px;
+  width: 16.1px;
+  position: relative;
+  min-height: 16px;
+}
+
+/* Styling for .icon, .standing */
+.icon,
+.standing {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-lg) 0 0; /* Using a CSS custom property */
+  gap: var(--gap-6xs-5); /* Using a CSS custom property */
+}
+
+/* Styling for .standing */
+.standing {
+  width: 806.6px;
+  border-radius: 6.45px; /* Using a CSS custom property */
+  background-color: var(--color-ghostwhite); /* Using a CSS custom property */
+  justify-content: center;
+  padding: var(--padding-smi-9) var(--padding-7xs); /* Using a CSS custom property */
+  box-sizing: border-box;
+  gap: var(--gap-52xl); /* Using a CSS custom property */
+}
+
+/* Styling for .div22 */
+.div22 {
+  position: relative;
+  font-weight: 500;
+}
+
+/* Styling for .logo-icon5 */
+.logo-icon5 {
+  height: 25.8px;
+  width: 25.8px;
+  position: relative;
+  object-fit: cover;
+}
+
+/* Styling for .club8, .manchester-city */
+.club8,
+.manchester-city {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for .manchester-city */
+.manchester-city {
+  width: 269.4px;
+  position: relative;
+  font-weight: 500;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+/* Styling for .club8 */
+.club8 {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-smi-9); /* Using a CSS custom property */
+  max-width: 100%;
+}
+
+/* Styling for .div23, .div24, .div25, .div26 */
+.div23,
+.div24,
+.div25,
+.div26 {
+  flex: 1;
+  position: relative;
+}
+
+/* Styling for .poin1 */
+.poin1 {
+  width: 193.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+/* Styling for .vector-icon2, .vector-icon3, .vector-icon4, .vector-icon5, .vector-icon6 */
+.vector-icon2,
+.vector-icon3,
+.vector-icon4,
+.vector-icon5,
+.vector-icon6 {
+  height: 16.1px;
+  width: 16.1px;
+  position: relative;
+  min-height: 16px;
+}
+
+/* Styling for .icon1 and .standing1 */
+.icon1,
+.standing1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-lg) 0 0; /* Using a CSS custom property for padding */
+  gap: var(--gap-6xs-5); /* Using a CSS custom property for gap */
+}
+
+/* Specific styling for .standing1 */
+.standing1 {
+  width: 806.6px;
+  border-radius: 6.45px; /* Using a CSS custom property for border-radius */
+  background-color: var(--color-ghostwhite); /* Using a CSS custom property for background color */
+  justify-content: center;
+  padding: var(--padding-smi-9) var(--padding-7xs); /* Using CSS custom properties for padding */
+  box-sizing: border-box;
+  gap: var(--gap-52xl); /* Using a CSS custom property for gap */
+}
+
+/* Styling for .div27 */
+.div27 {
+  position: relative;
+  font-weight: 500;
+}
+
+/* Styling for .logo-icon6 */
+.logo-icon6 {
+  height: 25.8px;
+  width: 25.8px;
+  position: relative;
+  object-fit: cover;
+}
+
+/* Styling for .club9 and .liverpool */
+.club9,
+.liverpool {
+  display: flex;
+  align-items: center;
+}
+
+/* Specific styling for .liverpool */
+.liverpool {
+  width: 269.4px;
+  position: relative;
+  font-weight: 500;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+/* Styling for .club9 */
+.club9 {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-smi-9); /* Using a CSS custom property for gap */
+  max-width: 100%;
+}
+
+/* Styling for .div28, .div29, .div30, .div31 */
+.div28,
+.div29,
+.div30,
+.div31 {
+  flex: 1;
+  position: relative;
+}
+
+/* Styling for .poin2 */
+.poin2 {
+  width: 193.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+/* Styling for .vector-icon10, .vector-icon11, .vector-icon7, .vector-icon8, .vector-icon9 */
+.vector-icon10,
+.vector-icon11,
+.vector-icon7,
+.vector-icon8,
+.vector-icon9 {
+  height: 16.1px;
+  width: 16.1px;
+  position: relative;
+  min-height: 16px;
+}
+
+/* Styling for .icon2 and .standing2 */
+.icon2,
+.standing2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-lg) 0 0; /* Using a CSS custom property for padding */
+  gap: var(--gap-6xs-5); /* Using a CSS custom property for gap */
+}
+
+/* Specific styling for .standing2 */
+.standing2 {
+  width: 806.6px;
+  border-radius: 6.45px; /* Using a CSS custom property for border-radius */
+  background-color: var(--color-ghostwhite); /* Using a CSS custom property for background color */
+  justify-content: center;
+  padding: var(--padding-smi-9) var(--padding-7xs); /* Using CSS custom properties for padding */
+  box-sizing: border-box;
+  gap: var(--gap-52xl); /* Using a CSS custom property for gap */
+}
+
+/* Styling for .div32 */
+.div32 {
+  position: relative;
+  font-weight: 500;
+}
+
+/* Styling for .logo-icon7 */
+.logo-icon7 {
+  height: 25.8px;
+  width: 25.8px;
+  position: relative;
+  object-fit: cover;
+}
+
+/* Styling for .club10 and .manchester-united */
+.club10,
+.manchester-united {
+  display: flex;
+  align-items: center;
+}
+
+/* Specific styling for .manchester-united */
+.manchester-united {
+  width: 269.4px;
+  position: relative;
+  font-weight: 500;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+/* Styling for .club10 */
+.club10 {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-smi-9); /* Using a CSS custom property for gap */
+  max-width: 100%;
+}
+
+/* Styling for .div33, .div34, .div35, .div36 */
+.div33,
+.div34,
+.div35,
+.div36 {
+  flex: 1;
+  position: relative;
+}
+
+/* Styling for .poin3 */
+.poin3 {
+  width: 193.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+/* Styling for .vector-icon12, .vector-icon13, .vector-icon14, .vector-icon15, .vector-icon16 */
+.vector-icon12,
+.vector-icon13,
+.vector-icon14,
+.vector-icon15,
+.vector-icon16 {
+  height: 16.1px;
+  width: 16.1px;
+  position: relative;
+  min-height: 16px;
+}
+
+/* Styling for .icon3 and .standing3 */
+.icon3,
+.standing3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-lg) 0 0; /* Using a CSS custom property for padding */
+  gap: var(--gap-6xs-5); /* Using a CSS custom property for gap */
+}
+
+/* Specific styling for .standing3 */
+.standing3 {
+  width: 806.6px;
+  border-radius: 6.45px; /* Using a CSS custom property for border-radius */
+  background-color: var(--color-ghostwhite); /* Using a CSS custom property for background color */
+  justify-content: center;
+  padding: var(--padding-smi) var(--padding-7xs) 12.8px; /* Using CSS custom properties for padding */
+  box-sizing: border-box;
+  gap: var(--gap-52xl); /* Using a CSS custom property for gap */
+}
+
+/* Styling for .div37 */
+.div37 {
+  position: relative;
+  font-weight: 500;
+}
+
+/* Styling for .logo-icon8 */
+.logo-icon8 {
+  height: 25.8px;
+  width: 25.8px;
+  position: relative;
+  object-fit: cover;
+}
+
+/* Styling for .club11 and .west-ham-united */
+.club11,
+.west-ham-united {
+  display: flex;
+  align-items: center;
+}
+
+/* Specific styling for .west-ham-united */
+.west-ham-united {
+  width: 269.4px;
+  position: relative;
+  font-weight: 500;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+/* Styling for .club11 */
+.club11 {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-smi-9); /* Using a CSS custom property for gap */
+  max-width: 100%;
+}
+
+/* Styling for .div38, .div39, .div40, .div41 */
+.div38,
+.div39,
+.div40,
+.div41 {
+  flex: 1;
+  position: relative;
+}
+
+/* Styling for .poin4 */
+.poin4 {
+  width: 193.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+/* Styling for .vector-icon17, .vector-icon18, .vector-icon19, .vector-icon20, .vector-icon21 */
+.vector-icon17,
+.vector-icon18,
+.vector-icon19,
+.vector-icon20,
+.vector-icon21 {
+  height: 16.1px;
+  width: 16.1px;
+  position: relative;
+  min-height: 16px;
+}
+
+/* Styling for .icon4 and .standing4 */
+.icon4,
+.standing4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-lg) 0 0; /* Using a CSS custom property for padding */
+  gap: var(--gap-6xs-5); /* Using a CSS custom property for gap */
+}
+
+/* Specific styling for .standing4 */
+.standing4 {
+  width: 806.6px;
+  border-radius: 6.45px; /* Using a CSS custom property for border-radius */
+  background-color: var(--color-lavenderblush-100); /* Using a CSS custom property for background color */
+  justify-content: center;
+  padding: var(--padding-smi-9) var(--padding-7xs); /* Using CSS custom properties for padding */
+  box-sizing: border-box;
+  gap: var(--gap-52xl); /* Using a CSS custom property for gap */
+}
+
+/* Styling for .div42 */
+.div42 {
+  position: relative;
+  font-weight: 500;
+}
+
+/* Styling for .logo-icon9 */
+.logo-icon9 {
+  height: 25.8px;
+  width: 25.8px;
+  position: relative;
+  object-fit: cover;
+}
+
+/* Styling for .arsenal-fc and .club12 */
+.arsenal-fc,
+.club12 {
+  display: flex;
+  align-items: center;
+}
+
+/* Specific styling for .arsenal-fc */
+.arsenal-fc {
+  width: 269.4px;
+  position: relative;
+  font-weight: 500;
+  text-align: left;
+  flex-shrink: 0;
+}
+
+/* Styling for .club12 */
+.club12 {
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--gap-smi-9); /* Using a CSS custom property for gap */
+  max-width: 100%;
+}
+
+/* Styling for .div43, .div44, .div45, .div46 */
+.div43,
+.div44,
+.div45,
+.div46 {
+  flex: 1;
+  position: relative;
+}
+
+/* Styling for .poin5 */
+.poin5 {
+  width: 193.6px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+/* Styling for .vector-icon22, .vector-icon23, .vector-icon24, .vector-icon25, .vector-icon26 */
+.vector-icon22,
+.vector-icon23,
+.vector-icon24,
+.vector-icon25,
+.vector-icon26 {
+  height: 16.1px;
+  width: 16.1px;
+  position: relative;
+  min-height: 16px;
+}
+
+/* Styling for .icon5 */
+.icon5 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 var(--padding-lg) 0 0; /* Using a CSS custom property for padding */
+  gap: var(--gap-6xs-5); /* Using a CSS custom property for gap */
+}
+
+/* Styling for .ranking and .standing5 */
+.ranking,
+.standing5 {
+  width: 806.6px;
+  display: flex;
+  box-sizing: border-box;
+}
+
+/* Specific styling for .standing5 */
+.standing5 {
+  border-radius: 6.45px; /* Using a CSS custom property for border-radius */
+  background-color: var(--color-lavenderblush-100); /* Using a CSS custom property for background color */
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-smi-9) var(--padding-7xs); /* Using CSS custom properties for padding */
+  gap: var(--gap-52xl); /* Using a CSS custom property for gap */
+}
+
+/* Styling for .ranking */
+.ranking {
+  overflow-x: auto;
+  flex-shrink: 0;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  gap: var(--gap-6xs-5); /* Using a CSS custom property for gap */
+  max-width: calc(100% - 24px);
+  cursor: pointer;
+}
+
+/* Styling for .match-card-background and .scrooling-child */
+.match-card-background,
+.scrooling-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 32.26px; /* Using a CSS custom property for border-radius */
+}
+
+/* Specific styling for .scrooling-child */
+.scrooling-child {
+  background-color: var(--color-gainsboro); /* Using a CSS custom property for background color */
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+/* Specific styling for .match-card-background */
+.match-card-background {
+  background-color: var(--color-slateblue); /* Using a CSS custom property for background color */
+  width: 4.8px;
+  height: 61.3px;
+  z-index: 1;
+}
+
+/* Styling for .scrooling */
+.scrooling {
+  height: 303.3px;
+  width: 4.8px;
+  position: relative;
+  border-radius: 32.26px; /* Using a CSS custom property for border-radius */
+  background-color: var(--color-gainsboro); /* Using a CSS custom property for background color */
+}
+
+/* Styling for .standings-list and .standings-title */
+.standings-list,
+.standings-title {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
+/* Specific styling for .standings-list */
+.standings-list {
+  flex-direction: row;
+  align-items: flex-end;
+  padding: 0 var(--padding-xl) 0 0; /* Using a CSS custom property for padding */
+  box-sizing: border-box;
+  gap: 19.4px; /* Using a CSS custom property for gap */
+  text-align: center;
+  font-size: var(--font-size-smi-9); /* Using a CSS custom property for font-size */
+  color: var(--black); /* Using a CSS custom property for color */
+}
+
+/* Specific styling for .standings-title */
+.standings-title {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25.8px; /* Using a CSS custom property for gap */
+}
+
+/* Styling for .fixtures */
+.fixtures {
+  align-self: stretch;
+  height: 30px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 600;
+  display: inline-block;
+}
+
+/* Styles for international-friendly-match */
+.international-friendly-match {
+  flex: 1;
+  position: relative;
+}
+
+/* Styles for Europa League icon */
+.europa-league-icon {
+  align-self: stretch;
+  border-radius: 29.53px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 4.9px var(--padding-4xs); /* Adjust padding using custom variable */
+  white-space: nowrap;
+  color: var(--color-mediumslateblue);
+}
+
+/* Styles for UTC 08 */
+.utc08 {
+  white-space: nowrap;
+}
+
+/* Styles for Hong Kong Stadium and UTC 08 */
+.hongkong-stadium,
+.utc08 {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 124.5%;
+  font-weight: 500;
+}
+
+/* Styles for league icons */
+.league-icons {
+  width: 230.4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 3.9px; /* Adjust gap between elements */
+}
+
+/* Styles for analytics content icon */
+.analytics-content-icon {
+  height: 42.3px;
+  width: 42.3px;
+  position: relative;
+  border-radius: 50%;
+  object-fit: cover;
+  min-height: 42px;
+}
+
+/* Styles for VS */
+.vs {
+  position: relative;
+  font-weight: 500;
+}
+
+/* Styles for analytics chart */
+.analytics-chart {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 14.7px 0 0; /* Adjust padding */
+}
+
+/* Styles for another analytics content icon */
+.analytics-content-icon1 {
+  height: 42.3px;
+  width: 42.3px;
+  position: relative;
+  border-radius: 50%;
+  object-fit: cover;
+  min-height: 42px;
+}
+
+/* Styles for analytics container and wrapper */
+.analytics-container,
+.analytics-container-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+/* Styles for analytics container */
+.analytics-container {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl); /* Adjust gap between elements */
+}
+
+/* Styles for analytics container wrapper */
+.analytics-container-wrapper {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: 0 var(--padding-3xs) 0 var(--padding-smi); /* Adjust padding */
+}
+
+/* Styles for NY Yorks and NY Yorks 1 */
+.ny-yorks,
+.ny-yorks1 {
+  position: relative;
+}
+
+/* Styles for analytics input */
+.analytics-input {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl); /* Adjust gap between elements */
+  font-size: var(--font-size-base-8); /* Adjust font size using custom variable */
+  color: var(--color-dimgray-100);
+  font-family: var(--font-oxanium);
+}
+
+/* Styles for frame parent 31 */
+.frame-parent31 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 5.9px; /* Adjust gap between elements */
+}
+
+/* Styles for second match card background inner */
+.second-match-card-background-inner {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-9xl) 0 var(--padding-4xl); /* Adjust padding */
+  text-align: left;
+  color: var(--color-darkslategray-300);
+  font-family: var(--font-roboto);
+}
+
+/* Styles for second match card background and location */
+.second-match-card-background,
+.second-match-location {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Styles for second match card background */
+.second-match-card-background {
+  width: 270.7px;
+  box-shadow: 63px 75.6px 78.76px rgba(0, 0, 0, 0.07),
+    40.8px 49px 46.12px rgba(0, 0, 0, 0.05),
+    24.3px 29.1px 25.09px rgba(0, 0, 0, 0.04),
+    12.6px 15.1px 12.8px rgba(0, 0, 0, 0.04),
+    5.1px 6.2px 6.42px rgba(0, 0, 0, 0.03),
+    1.2px 1.4px 3.1px rgba(0, 0, 0, 0.02);
+  border-radius: 11.81px;
+  background-color: var(--color-gray-400);
+  border: 2px solid var(--white);
+  box-sizing: border-box;
+  padding: var(--padding-xs) var(--padding-mid) var(--padding-14xl); /* Adjust padding */
+  gap: 19.9px; /* Adjust gap between elements */
+  text-align: center;
+  font-size: var(--font-size-sm-8); /* Adjust font size using custom variable */
+  color: var(--color-darkslateblue-200);
+}
+
+/* Styles for second match location */
+.second-match-location {
+  width: 383.9px;
+  gap: 15.3px; /* Adjust gap between elements */
+  max-width: 100%;
+}
+
+/* Styles for icon 6 */
+.icon6 {
+  width: 31.5px;
+  height: 31.5px;
+  position: relative;
+}
+
+/* Styles for dropdown icon */
+.dropdown-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 3.9px 0 0; /* Adjust padding */
+}
+
+/* Styles for second match details */
+.second-match-details {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 var(--padding-smi) 19.7px 0; /* Adjust padding */
+  box-sizing: border-box;
+  max-width: 100%;
+  gap: var(--gap-xl); /* Adjust gap between elements */
+  cursor: pointer;
+}
+
+/* Styles for international-friendly-match 1 */
+.international-friendly-match1 {
+  flex: 1;
+  position: relative;
+}
+
+/* Styles for calendar event */
+.calendar-event {
+  align-self: stretch;
+  border-radius: 30.05px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-8xs) var(--padding-3xs); /* Adjust padding */
+  color: var(--color-mediumslateblue);
+}
+
+/* Styles for calendar event and UTC 081 */
+.calendar-event,
+.utc081 {
+  white-space: nowrap;
+}
+
+/* Styles for Hong Kong Stadium 1 and UTC 081 */
+.hongkong-stadium1,
+.utc081 {
+  align-self: stretch;
+  position: relative;
+  letter-spacing: 0.02em;
+  line-height: 124.5%;
+  font-weight: 500;
+}
+
+/* Styles for calendar content */
+.calendar-content {
+  width: 234.4px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 4.1px; /* Adjust gap between elements */
+}
+
+/* Styles for minus calendar input child */
+.minus-calendar-input-child {
+  height: 43.1px;
+  width: 43.1px;
+  position: relative;
+  border-radius: 50%;
+  object-fit: cover;
+  min-height: 43px;
+}
+
+/* Styles for VS 1 */
+.vs1 {
+  position: relative;
+  font-weight: 500;
+}
+
+/* Styles for map container */
+.map-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-mini) 0 0; /* Adjust padding */
+}
+
+/* Styles for minus calendar input item */
+.minus-calendar-input-item {
+  height: 43.1px;
+  width: 43.1px;
+  position: relative;
+  border-radius: 50%;
+  object-fit: cover;
+  min-height: 43px;
+}
+
+/* Styles for minus calendar icon and input */
+.minus-calendar-icon,
+.minus-calendar-input {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+/* Styles for minus calendar input */
+.minus-calendar-input {
+  flex: 1;
+  justify-content: space-between;
+  gap: var(--gap-xl); /* Adjust gap between elements */
+}
+
+/* Styles for minus calendar icon */
+.minus-calendar-icon {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: 0 var(--padding-3xs) 0 var(--padding-xs); /* Adjust padding */
+}
+
+/* Styles for NY Yorks 2 and NY Yorks 3 */
+.ny-yorks2,
+.ny-yorks3 {
+  position: relative;
+  flex-shrink: 0;
+  debug_commit: 69da668;
+}
+
+/* Styles for location map */
+.location-map {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--gap-xl); /* Adjust gap between elements */
+  font-size: var(--font-size-base); /* Adjust font size using custom variable */
+  color: var(--color-dimgray-100);
+  font-family: var(--font-oxanium);
+}
+
+/* Styles for minus calendar */
+.minus-calendar {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 6px; /* Adjust gap between elements */
+}
+
+/* Styles for calendar container and date input */
+.calendar-container,
+.date-input {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Styles for date input */
+.date-input {
+  align-self: stretch;
+  flex-direction: row;
+  padding: 0 var(--padding-8xl) 0 var(--padding-6xl); /* Adjust padding */
+  text-align: left;
+  color: var(--color-darkslategray-300);
+  font-family: var(--font-roboto);
+}
+
+/* Styles for calendar container */
+.calendar-container {
+  flex: 1;
+  box-shadow: 64.1px 77px 80.14px rgba(0, 0, 0, 0.07),
+    41.6px 49.9px 46.93px rgba(0, 0, 0, 0.05),
+    24.7px 29.6px 25.53px rgba(0, 0, 0, 0.04),
+    12.8px 15.4px 13.02px rgba(0, 0, 0, 0.04),
+    5.2px 6.3px 6.53px rgba(0, 0, 0, 0.03),
+    1.2px 1.4px 3.15px rgba(0, 0, 0, 0.02);
+  border-radius: 12.02px;
+  background-color: var(--color-gray-400);
+  border: 2px solid var(--white);
+  flex-direction: column;
+  padding: var(--padding-xs) var(--padding-lg) var(--padding-15xl); /* Adjust padding */
+  gap: 20.1px; /* Adjust gap between elements */
+}
+
+/* Styles for crad 2 */
+.crad-2 {
+  width: 295.5px;
+  flex-direction: row;
+  padding: 0 var(--padding-xl) 0 0; /* Adjust padding */
+  box-sizing: border-box;
+  cursor: pointer;
+  text-align: center;
+  font-size: var(--font-size-sm); /* Adjust font size using custom variable */
+  color: var(--color-darkslateblue-200);
+}
+
+/* Styles for crad 2, second match card, and standings header */
+.crad-2,
+.second-match-card,
+.standings-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Styles for second match card */
+.second-match-card {
+  width: 570px;
+  flex-direction: column;
+  gap: var(--gap-xs-3); /* Adjust gap between elements */
+  min-width: 570px;
+  max-width: 100%;
+  font-size: 23.6px; /* Adjust font size */
+  color: var(--white);
+  font-family: var(--font-oxanium);
+}
+
+/* Styles for standings header */
+.standings-header {
+  width: 1487px;
+  flex-direction: row;
+  gap: var(--gap-30xl); /* Adjust gap between elements */
+  max-width: 113%;
+  flex-shrink: 0;
+}
+
+/* Styles for submit input child */
+.submit-input-child {
+  width: 9.7px;
+  height: 9.7px;
+  position: relative;
+  border-radius: 50%;
+  background-color: #560617;
+}
+
+/* Styles for submit input */
+.submit-input {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-10xs-1); /* Adjust padding */
+}
+
+/* Styles for Europa League */
+.europa-league {
+  position: relative;
+  line-height: 120%;
+}
+
+/* Styles for submit button */
+.submit-button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 6.4px; /* Adjust gap between elements */
+}
+
+/* Styles for ellipse div */
+.ellipse-div {
+  width: 9.7px;
+  height: 9.7px;
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--color-slateblue);
+}
+
+/* Styles for submit button inner */
+.submit-button-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-10xs-1); /* Adjust padding */
+}
+
+/* Styles for Champions League */
+.champions-league {
+  flex: 1;
+  position: relative;
+  line-height: 120%;
+}
+
+/* Styles for submit button 1 */
+.submit-button1 {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-6xs-5); /* Adjust gap between elements */
+}
+
+/* Styles for map input and standings container */
+.map-input,
+.standings-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Styles for map input */
+.map-input {
+  width: 263px;
+  flex-direction: row;
+  padding: 0 var(--padding-xl) 0 0; /* Adjust padding */
+  box-sizing: border-box;
+  gap: var(--gap-smi-9); /* Adjust gap between elements */
+  font-size: var(--font-size-xs-3); /* Adjust font size using custom variable */
+  color: var(--white);
+}
+
+/* Styles for standings container */
+.standings-container {
+  width: 1322px;
+  flex-direction: column;
+  gap: 9.7px; /* Adjust gap between elements */
+  max-width: 100%;
+}
+
+/* Styles for standings container wrapper */
+.standings-container-wrapper {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-end;
+  max-width: 100%;
+  text-align: left;
+  font-size: 16.1px; /* Adjust font size */
+  color: #fff2f2; /* Adjust color */
+  font-family: var(--font-inter);
+}
+
+/* Styles for background and frame child 2 */
+.bg,
+.frame-child2 {
+  height: 144px;
+  width: 1352px;
+  position: relative;
+  box-shadow: var(--shadow);
+  border-radius: var(--br-xs);
+  background-color: var(--color-gray-500);
+  display: none;
+  max-width: 100%;
+}
+
+/* Styles for frame child 2 */
+.frame-child2 {
+  height: 72px;
+  width: 1071.4px;
+  background-color: var(--white);
+  border: 2px solid var(--white);
+  box-sizing: border-box;
+}
+
+/* Styles for file analytics icon */
+.file-analytics-icon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+/* Styles for file analytics wrapper */
+.file-analytics-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) 0 0; /* Adjust padding */
+}
+
+/* Styles for input and label */
+.input,
+.label {
+  position: relative;
+}
+
+/* Styles for label */
+.label {
+  width: 182.7px;
+  line-height: 14px;
+  display: inline-block;
+}
+
+/* Styles for input */
+.input {
+  align-self: stretch;
+  font-size: var(--font-size-mini); /* Adjust font size using custom variable */
+  line-height: 20px;
+  font-weight: 600;
+  mix-blend-mode: normal;
+}
+
+/* Styles for label container */
+.label-container {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-5xs); /* Adjust gap between elements */
+  min-width: 145px;
+}
+
+/* Styles for analytics chart container, elements, and label container */
+.analytics-chart-container,
+.analytics-elements,
+.label-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Styles for analytics chart container */
+.analytics-chart-container {
+  align-self: stretch;
+  flex-direction: row;
+  gap: var(--gap-xl); /* Adjust gap between elements */
+}
+
+/* Styles for analytics elements */
+.analytics-elements {
+  width: 273px;
+  flex-shrink: 0;
+  flex-direction: column;
+  padding: var(--padding-sm) 0 0; /* Adjust padding */
+  box-sizing: border-box;
+}
+
+/* Styles for arrow drop down line icon */
+.arrow-drop-down-line-icon {
+  width: 28px;
+  height: 28px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* Styles for arrow drop down line wrapper */
+.arrow-drop-down-line-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-2xl) var(--padding-3xs) 0 0; /* Adjust padding */
+}
+
+/* Styles for dropdown background child */
+.dropdown-background-child {
+  width: 0.7px;
+  flex: 1;
+  position: relative;
+  border: 1px solid var(--color-darkslateblue-100);
+  box-sizing: border-box;
+  opacity: 0.3; /* Adjust opacity */
+}
+
+/* Styles for dropdown background */
+.dropdown-background {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xs) 0 0; /* Adjust padding */
+}
+
+/* Styles for calendar event icon */
+.calendar-event-icon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+/* Styles for calendar container 1 */
+.calendar-container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xl) 0 0; /* Adjust padding */
+}
+
+/* Styles for input 1 and label 1 */
+.input1,
+.label1 {
+  position: relative;
+}
+
+/* Styles for label 1 */
+.label1 {
+  width: 69px;
+  line-height: 14px;
+  display: inline-block;
+}
+
+/* Styles for input 1 */
+.input1 {
+  align-self: stretch;
+  font-size: var(--font-size-mini); /* Adjust font size */
+  line-height: 20px;
+  font-weight: 600;
+  mix-blend-mode: normal;
+}
+
+/* Styles for event label container */
+.event-label-container {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--gap-5xs); /* Adjust gap between elements */
+}
+
+/* Styles for calendar input container, dropdown container, and event label container */
+.calendar-input-container,
+.dropdown-container,
+.event-label-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Styles for calendar input container */
+.calendar-input-container {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-sm) 0 0; /* Adjust padding */
+}
+
+/* Styles for dropdown container */
+.dropdown-container {
+  height: 70px;
+  width: 251.7px;
+  flex-shrink: 0;
+  flex-direction: row;
+  padding: 0 var(--padding-3xs) 0 0; /* Adjust padding */
+  box-sizing: border-box;
+  gap: var(--gap-xl); /* Adjust gap between elements */
+}
+
+/* Styles for date background */
+.date-background {
+  width: 0.7px;
+  flex: 1;
+  position: relative;
+  background-color: var(--color-antiquewhite); /* Adjust background color */
+  border: 1px solid var(--color-darkslateblue-100);
+  box-sizing: border-box;
+}
+
+/* Styles for minus calendar container */
+.minus-calendar-container {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-3xs) 0 0; /* Adjust padding */
+}
+
+/* Styles for calendar minus icon */
+.calendar-minus-icon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+/* Styles for calendar minus */
+.calendar-minus {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-xl) 0 0; /* Adjust padding */
+}
+
+/* Styles for input 2 and label 2 */
+.input2,
+.label2 {
+  position: relative;
+}
+
+/* Styles for label 2 */
+.label2 {
+  width: 77px;
+  line-height: 14px;
+  display: inline-block;
+}
+
+/* Styles for input 2 */
+.input2 {
+  align-self: stretch;
+  font-size: var(--font-size-mini); /* Adjust font size */
+  line-height: 20px;
+  font-weight: 600;
+  mix-blend-mode: normal;
+}
+
+/* Styles for end label container */
+.end-label-container {
+  align-self: stretch;
+  flex-direction: column;
+  gap: var(--gap-5xs); /* Adjust gap between elements */
+}
+
+/* Styles for date container, end date container, and end label container */
+.date-container,
+.end-date-container,
+.end-label-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Styles for end date container */
+.end-date-container {
+  flex: 1;
+  flex-direction: column;
+  padding: var(--padding-sm) 0 0; /* Adjust padding */
+}
+
+/* Styles for date container */
+.date-container {
+  height: 70px;
+  width: 180.8px;
+  flex-shrink: 0;
+  flex-direction: row;
+  padding: 0 var(--padding-4xs) 0 0; /* Adjust padding */
+  box-sizing: border-box;
+  gap: var(--gap-xl); /* Adjust gap between elements */
+}
+
+/* Styles for location background */
+.location-background {
+  align-self: stretch;
+  width: 0.7px;
+  position: relative;
+  background-color: var(--color-antiquewhite); /* Adjust background color */
+  border: 1px solid var(--color-darkslateblue-100);
+  box-sizing: border-box;
+}
+
+/* Styles for map 2 icon */
+.map-2-icon {
+  height: 30px;
+  width: 30px;
+}
+
+/* Styles for input 3, label 3, and map 2 icon */
+.input3,
+.label3,
+.map-2-icon {
+  position: relative;
+}
+
+/* Styles for label 3 */
+.label3 {
+  width: 79px;
+  line-height: 14px;
+  display: inline-block;
+}
+
+/* Styles for input 3 */
+.input3 {
+  align-self: stretch;
+  font-size: var(--font-size-mini); /* Adjust font size */
+  line-height: 20px;
+  font-weight: 600;
+  mix-blend-mode: normal;
+}
+
+/* Styles for location label container and map input container */
+.location-label-container,
+.map-input-container {
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--gap-5xs); /* Adjust gap between elements */
+}
+
+/* Styles for location label container */
+.location-label-container {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Styles for map input container */
+.map-input-container {
+  width: 199px;
+  flex-direction: row;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+/* Styles for arrow drop down line icon 1 */
+.arrow-drop-down-line-icon1 {
+  height: 28px;
+  width: 28px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+/* Styles for map container 1 */
+.map-container1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0; /* Adjust padding */
+  gap: 13px; /* Adjust gap between elements */
+}
+
+/* Styles for map dropdown container */
+.map-dropdown-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-sm) 0 0; /* Adjust padding */
+}
+
+/* Styles for analytics inner, location container, and rectangle parent 1 */
+.analytics-inner,
+.location-container,
+.rectangle-parent1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Styles for location container */
+.location-container {
+  height: 70px;
+  width: 229.7px;
+  flex-shrink: 0;
+  gap: 30px; /* Adjust gap between elements */
+}
+
+/* Styles for analytics inner and rectangle parent 1 */
+.analytics-inner,
+.rectangle-parent1 {
+  flex: 1;
+  max-width: 100%;
+}
+
+/* Styles for analytics inner */
+.analytics-inner {
+  border-radius: 16px;
+  overflow-x: auto;
+  gap: var(--gap-xl); /* Adjust gap between elements */
+  z-index: 2; /* Adjust z-index */
+}
+
+/* Styles for rectangle parent 1 */
+.rectangle-parent1 {
+  box-shadow: var(--shadow); /* Apply box shadow */
+  border-radius: var(--br-xs); /* Adjust border radius */
+  background-color: var(--white); /* Adjust background color */
+  border: 2px solid var(--white);
+  box-sizing: border-box;
+  padding: var(--padding-12xs) var(--padding-3xs); /* Adjust padding */
+  z-index: 1; /* Adjust z-index */
+}
+
+/* Styles for button child */
+.button-child {
+  height: 72px;
+  width: 179.2px;
+  position: relative;
+  border-radius: var(--br-xs); /* Adjust border radius */
+  background-color: var(--color-tomato); /* Adjust background color */
+  display: none;
+}
+
+/* Styles for input 4 */
+.input4 {
+  position: relative;
+  font-size: var(--font-size-lg); /* Adjust font size */
+  line-height: 20px;
+  font-weight: 700;
+  font-family: var(--font-oxanium); /* Adjust font family */
+  color: var(--white); /* Adjust text color */
+  text-align: center;
+  mix-blend-mode: normal;
+  z-index: 1; /* Adjust z-index */
+}
+
+/* Styles for button and group 1 */
+.button,
+.group1 {
+  border-radius: var(--br-xs); /* Adjust border radius */
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+/* Styles for button */
+.button {
+  cursor: pointer;
+  border: 0;
+  padding: var(--padding-7xl) var(--padding-36xl) var(--padding-7xl) var(--padding-37xl); /* Adjust padding */
+  background-color: var(--color-tomato); /* Adjust background color */
+  display: flex;
+  justify-content: flex-start;
+  z-index: 1; /* Adjust z-index */
+}
+
+/* Styles for button hover state */
+.button:hover {
+  background-color: #e64045; /* Adjust hover background color */
+}
+
+/* Styles for group 1 */
+.group1 {
+  flex: 1;
+  box-shadow: var(--shadow); /* Apply box shadow */
+  background-color: var(--color-gray-500); /* Adjust background color */
+  flex-wrap: wrap;
+  padding: var(--padding-17xl) var(--padding-16xl) var(--padding-17xl) 38px; /* Adjust padding */
+  box-sizing: border-box;
+  gap: 27.6px; /* Adjust gap between elements */
+  max-width: 100%;
+}
+
+/* Styles for content 1, group wrapper, group 1, and page 2 */
+.content1,
+.group-wrapper,
+.group1,
+.page-2 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Styles for group wrapper */
+.group-wrapper {
+  width: 1366px; /* Set fixed width */
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 var(--padding-6xs); /* Adjust padding */
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-sm); /* Adjust font size */
+  color: var(--color-darkslategray-100); /* Adjust text color */
+  font-family: var(--font-oxanium); /* Adjust font family */
+}
+
+/* Styles for content 1 and page 2 */
+.content1,
+.page-2 {
+  flex-direction: column;
+}
+
+/* Styles for content 1 */
+.content1 {
+  align-self: stretch;
+  align-items: flex-start;
+  gap: 15.9px; /* Adjust gap between elements */
+  max-width: 100%;
+}
+
+/* Styles for page 2 */
+.page-2 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-midnightblue); /* Adjust background color */
+  overflow: hidden;
+  align-items: flex-end;
+  padding: 0 0 var(--padding-mini) var(--padding-14xl); /* Adjust padding */
+  box-sizing: border-box;
+  gap: 64px; /* Adjust gap between elements */
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+/* Media query for screens up to 1200px */
+@media screen and (max-width: 1200px) {
+  .second-match-card {
+    flex: 1;
+  }
+  .standings-header {
+    flex-wrap: wrap;
+  }
+}
+
+/* Media query for screens up to 1050px */
+@media screen and (max-width: 1050px) {
+  .team-info2 {
+    padding-left: 229px;
+    box-sizing: border-box;
+  }
+  .rectangle-parent1 {
+    min-width: 100%;
+  }
+}
+
+/* Media query for screens up to 750px */
+@media screen and (max-width: 750px) {
+  .team-info2 {
+    display: none;
+    padding-left: 114px;
+    box-sizing: border-box;
+  }
+  .navigation1 {
+    width: 0;
+  }
+  .title {
+    padding-right: var(--padding-284xl);
+    box-sizing: border-box;
+  }
+  .league {
+    min-width: 100%;
+  }
+  .league,
+  .ttile {
+    flex-wrap: wrap;
+  }
+  .standings-title {
+    min-width: 100%;
+  }
+  .second-match-details {
+    flex-wrap: wrap;
+  }
+  .second-match-card {
+    min-width: 100%;
+  }
+  .standings-header {
+    gap: var(--gap-5xl); /* Adjust gap between elements */
+  }
+  .page-2 {
+    gap: 32px; /* Adjust gap between elements */
+  }
+}
+
+/* Media query for screens up to 450px */
+@media screen and (max-width: 450px) {
+  .team-info2,
+  .title {
+    box-sizing: border-box;
+  }
+  .team-info2 {
+    padding-left: var(--padding-xl); /* Adjust padding */
+  }
+  .title {
+    padding-right: var(--padding-xl); /* Adjust padding */
+  }
+  .fixtures {
+    font-size: var(--font-size-lgi); /* Adjust font size */
+  }
+  .analytics-chart-container {
+    flex-wrap: wrap;
+  }
+  .page-2 {
+    gap: 16px; /* Adjust gap between elements */
+  }
+}

@@ -1,0 +1,380 @@
+/* Styles for .HomePageCover */
+.HomePageCover {
+  width: 1534px; /* Width of the element */
+  height: 1170px; /* Height of the element */
+  position: relative; /* Positioned relative to its normal position */
+  object-fit: cover; /* Scale the image to cover the container */
+  display: none; /* Initially hidden */
+  max-width: 100%; /* Maximum width it can take */
+  z-index: 0; /* Stacking order */
+}
+
+/* Styles for .image-1-icon */
+.HomePageCover2 {
+  position: absolute; /* Positioned absolutely */
+  top: 93px; /* Distance from the top */
+  left: 0; /* Distance from the left */
+  width: 1440px; /* Width of the element */
+  height: 931px; /* Height of the element */
+  object-fit: cover; /* Scale the image to cover the container */
+}
+
+/* Styles for .frame-child3 to .frame-child8 */
+.frame-child3,
+.frame-child4,
+.frame-child5,
+.frame-child6,
+.frame-child7,
+.frame-child8 {
+  position: absolute; /* Positioned absolutely */
+  top: 133px; /* Distance from the top */
+  left: 0; /* Distance from the left */
+  background-color: var(--color-gray-600); /* Background color */
+  width: 701px; /* Width of the element */
+  height: 891px; /* Height of the element */
+  z-index: 1; /* Stacking order */
+}
+
+/* Specific adjustments for .frame-child4 to .frame-child8 */
+.frame-child4,
+.frame-child5,
+.frame-child6,
+.frame-child7,
+.frame-child8 {
+  left: 721px; /* Adjusted left position */
+  width: 115px; /* Adjusted width */
+}
+
+/* Further adjustments for subsequent .frame-child elements */
+.frame-child5,
+.frame-child6,
+.frame-child7,
+.frame-child8 {
+  left: 856px;
+  width: 86px;
+}
+
+.frame-child6,
+.frame-child7,
+.frame-child8 {
+  left: 966px;
+  width: 71px;
+}
+
+.frame-child7,
+.frame-child8 {
+  left: 1061px;
+  width: 65px;
+}
+
+.frame-child8 {
+  left: 1147px;
+  width: 57px;
+}
+
+/* Styles for .logo-icon10 */
+.logo-icon10 {
+  position: absolute; /* Positioned absolutely */
+  top: -21px; /* Distance from the top */
+  left: -25px; /* Distance from the left */
+  width: 125.2px; /* Width of the element */
+  height: 133.5px; /* Height of the element */
+  object-fit: contain; /* Maintain aspect ratio */
+  z-index: 2; /* Stacking order */
+}
+
+/* Styles for .contact4 */
+.contact4 {
+  text-decoration: none; /* No underline */
+  position: absolute; /* Positioned absolutely */
+  top: 28px; /* Distance from the top */
+  right: -67px; /* Distance from the right */
+  color: inherit; /* Inherit text color */
+  display: inline-block; /* Display as inline-block */
+  width: 199px; /* Width of the element */
+  height: 42px; /* Height of the element */
+  cursor: pointer; /* Cursor style */
+  z-index: 1; /* Stacking order */
+}
+
+/* Styles for .goalieswatch4 and .image-1-parent */
+.goalieswatch4,
+.image-1-parent {
+  position: absolute; /* Positioned absolutely */
+  margin: 0 !important; /* Remove margin */
+}
+
+/* Styles for .image-1-parent */
+.image-1-parent {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  top: 0; /* Distance from the top */
+  right: 0; /* Distance from the right */
+  bottom: 0; /* Distance from the bottom */
+  left: 0; /* Distance from the left */
+  text-align: left; /* Text alignment */
+  font-size: var(--font-size-5xl); /* Font size */
+  color: var(--white); /* Text color */
+  font-family: var(--font-poppins); /* Font family */
+}
+
+/* Styles for .goalieswatch4 */
+.goalieswatch4 {
+  text-decoration: none; /* No underline */
+  height: 48px; /* Height of the element */
+  width: 296px; /* Width of the element */
+  top: 22px; /* Distance from the top */
+  left: -29.2px; /* Distance from the left */
+  color: inherit; /* Inherit text color */
+  display: inline-block; /* Display as inline-block */
+  white-space: nowrap; /* No wrapping */
+  z-index: 1; /* Stacking order */
+}
+
+/* Styles for .standings-info-child */
+.standings-info-child {
+  height: 93px; /* Height of the element */
+  width: 1339.8px; /* Width of the element */
+  position: relative; /* Positioned relative to its normal position */
+  background-color: var(--color-gray-600); /* Background color */
+  display: none; /* Initially hidden */
+  max-width: 100%; /* Maximum width it can take */
+}
+
+/* Styles for .about-us6, .standings2, .upcoming-match4 */
+.about-us6,
+.standings2,
+.upcoming-match4 {
+  text-decoration: none; /* No underline */
+  height: 42px; /* Height of the element */
+  position: relative; /* Positioned relative to its normal position */
+  color: inherit; /* Inherit text color */
+  display: inline-block; /* Display as inline-block */
+  cursor: pointer; /* Cursor style */
+  z-index: 1; /* Stacking order */
+}
+
+/* Styles specifically for .upcoming-match4 */
+.upcoming-match4 {
+  white-space: nowrap; /* No wrapping */
+}
+
+/* Styles for .goalieswatch-parent and .standings-info */
+.goalieswatch-parent,
+.standings-info {
+  display: flex; /* Display as flex container */
+  flex-direction: row; /* Row layout */
+  align-items: flex-start; /* Align items at the start */
+  max-width: 100%; /* Maximum width it can take */
+  text-align: left; /* Text alignment */
+  color: var(--white); /* Text color */
+  font-family: var(--font-poppins); /* Font family */
+}
+
+/* Styles specifically for .standings-info */
+.standings-info {
+  margin: 0; /* No margin */
+  flex: 1; /* Flexible width */
+  background-color: var(--color-gray-600); /* Background color */
+  justify-content: flex-end; /* Justify content at the end */
+  padding: var(--padding-9xl) 146px var(--padding-4xl); /* Padding */
+  box-sizing: border-box; /* Box-sizing */
+  gap: 12.5px; /* Gap between elements */
+  font-size: var(--font-size-5xl); /* Font size */
+}
+
+/* Styles for .goalieswatch-parent */
+.goalieswatch-parent {
+  align-self: stretch; /* Stretch to fit */
+  justify-content: flex-start; /* Justify content at the start */
+  position: relative; /* Positioned relative to its normal position */
+  font-size: var(--font-size-11xl); /* Font size */
+}
+
+/* Styles for .the-moment-is */
+.the-moment-is {
+  margin: 0; /* No margin */
+  align-self: stretch; /* Stretch to fit */
+  height: 82px; /* Height of the element */
+  position: relative; /* Positioned relative to its normal position */
+  font-size: inherit; /* Inherit font size */
+  font-weight: 400; /* Font weight */
+  font-family: inherit; /* Inherit font family */
+  display: inline-block; /* Display as inline-block */
+  flex-shrink: 0; /* Do not shrink */
+  backdrop-filter: blur(4px); /* Blur effect */
+  z-index: 2; /* Stacking order */
+}
+
+/* Styles for .frame-child9 */
+.frame-child9 {
+  height: 60px; /* Height of the element */
+  width: 233px; /* Width of the element */
+  position: relative; /* Positioned relative to its normal position */
+  border-radius: var(--br-16xl); /* Border radius */
+  background-color: var(--color-gray-200); /* Background color */
+  display: none; /* Initially hidden */
+}
+
+/* Styles for .wrapper-group-41-child */
+.wrapper-group-41-child {
+  height: 100%; /* Full height */
+  width: 100%; /* Full width */
+  z-index: 1; /* Stacking order */
+  object-fit: contain; /* Maintain aspect ratio */
+  position: absolute; /* Positioned absolutely */
+  left: 0; /* Distance from the left */
+  top: 0; /* Distance from the top */
+  transform: scale(2.2); /* Scale transform */
+}
+
+/* Styles for .wrapper-group-41 */
+.wrapper-group-41 {
+  height: 45px; /* Height of the element */
+  width: 45px; /* Width of the element */
+  position: relative; /* Positioned relative to its normal position */
+  min-height: 45px; /* Minimum height */
+  z-index: 1; /* Stacking order */
+  display: flex; /* Display as flex container */
+  align-items: center; /* Align items vertically center */
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Styles for .explore */
+.explore {
+  height: 38px; /* Height of the element */
+  position: relative; /* Positioned relative to its normal position */
+  font-size: var(--font-size-6xl); /* Dynamic font size */
+  font-family: var(--font-poppins); /* Font family */
+  color: var(--white); /* Text color */
+  text-align: left; /* Text alignment */
+  display: inline-block; /* Display as inline-block */
+  z-index: 1; /* Stacking order */
+}
+
+/* Styles for .explore-promo */
+.explore-promo {
+  display: flex; /* Display as flex container */
+  flex-direction: column; /* Column layout */
+  align-items: flex-start; /* Align items at the start */
+  justify-content: flex-start; /* Justify content at the start */
+  padding: var(--padding-9xs) 0 0; /* Padding */
+}
+
+/* Styles for .frame-wrapper2 and .group-button */
+.frame-wrapper2,
+.group-button {
+  align-self: stretch; /* Stretch to fit */
+  display: flex; /* Display as flex container */
+  flex-direction: row; /* Row layout */
+  align-items: flex-start; /* Align items at the start */
+  box-sizing: border-box; /* Box-sizing */
+}
+
+/* Styles for .group-button */
+.group-button {
+  cursor: pointer; /* Cursor style */
+  border: 0; /* No border */
+  padding: var(--padding-6xs) var(--padding-mini) var(--padding-5xs); /* Padding */
+  background-color: var(--color-gray-200); /* Background color */
+  width: 233px; /* Width of the element */
+  border-radius: var(--br-16xl); /* Border radius */
+  justify-content: flex-start; /* Justify content at the start */
+  gap: 31px; /* Gap between elements */
+  z-index: 2; /* Stacking order */
+}
+
+/* Styles for .frame-wrapper2 */
+.frame-wrapper2 {
+  height: 60px; /* Height of the element */
+  justify-content: center; /* Center content horizontally */
+  padding: 0 var(--padding-xl); /* Padding */
+}
+
+/* Styles for .the-moment-is-yours-parent */
+.the-moment-is-yours-parent {
+  width: 677px; /* Width of the element */
+  display: flex; /* Display as flex container */
+  flex-direction: column; /* Column layout */
+  align-items: flex-start; /* Align items at the start */
+  justify-content: flex-start; /* Justify content at the start */
+  gap: 18px; /* Gap between elements */
+  max-width: 100%; /* Maximum width it can take */
+}
+
+/* Styles for .page-1 and .page-1-inner */
+.page-1,
+.page-1-inner {
+  display: flex; /* Display as flex container */
+  align-items: flex-start; /* Align items at the start */
+  box-sizing: border-box; /* Box-sizing */
+}
+
+/* Styles for .page-1-inner */
+.page-1-inner {
+  width: 1243.8px; /* Width of the element */
+  flex-direction: row; /* Row layout */
+  justify-content: center; /* Center content horizontally */
+  padding: 0 var(--padding-xl); /* Padding */
+  max-width: 100%; /* Maximum width it can take */
+}
+
+/* Styles for .page-1 */
+.page-1 {
+  width: 100%; /* Full width */
+  position: relative; /* Positioned relative to its normal position */
+  background-color: var(--color-midnightblue); /* Background color */
+  overflow: hidden; /* Hide overflow content */
+  flex-direction: column; /* Column layout */
+  justify-content: flex-start; /* Justify content at the start */
+  padding: 0 0 var(--padding-25xl) var(--padding-81xl); /* Padding */
+  gap: 727px; /* Gap between sections */
+  line-height: normal; /* Normal line height */
+  letter-spacing: normal; /* Normal letter spacing */
+  text-align: left; /* Text alignment */
+  font-size: 64px; /* Font size */
+  color: var(--white); /* Text color */
+  font-family: var(--font-poppins); /* Font family */
+}
+
+/* Media query for screens up to 750px */
+@media screen and (max-width: 750px) {
+  .standings-info {
+    padding-left: var(--padding-54xl); /* Adjusted padding */
+    padding-right: var(--padding-54xl); /* Adjusted padding */
+    box-sizing: border-box; /* Box-sizing */
+  }
+  .the-moment-is {
+    font-size: 51px; /* Adjusted font size */
+  }
+  .page-1 {
+    gap: 363px; /* Adjusted gap between sections */
+    padding-left: var(--padding-31xl); /* Adjusted padding */
+    box-sizing: border-box; /* Box-sizing */
+  }
+}
+
+/* Media query for screens up to 450px */
+@media screen and (max-width: 450px) {
+  .contact4 {
+    font-size: var(--font-size-lgi); /* Adjusted font size */
+  }
+  .standings-info {
+    display: none; /* Hide standings info */
+    padding-left: var(--padding-xl); /* Adjusted padding */
+    padding-right: var(--padding-xl); /* Adjusted padding */
+    box-sizing: border-box; /* Box-sizing */
+  }
+  .the-moment-is {
+    font-size: var(--font-size-19xl); /* Adjusted font size */
+  }
+  .explore {
+    font-size: var(--font-size-xl); /* Adjusted font size */
+  }
+  .page-1 {
+    gap: 182px; /* Adjusted gap between sections */
+    padding-left: var(--padding-xl); /* Adjusted padding */
+    box-sizing: border-box; /* Box-sizing */
+  }
+}
+

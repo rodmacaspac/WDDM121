@@ -1,0 +1,197 @@
+/* Reset default margin and set normal line height for body */
+body {
+  margin: 0; /* Remove default margin */
+  line-height: normal; /* Set line height to normal */
+}
+
+/* Define custom CSS variables in :root */
+:root {
+  /* Font families */
+  --font-poppins: Poppins; /* Define Poppins font */
+  --font-open-sans: "Open Sans"; /* Define Open Sans font */
+  --font-inter: Inter; /* Define Inter font */
+  --font-space-grotesk: "Space Grotesk"; /* Define Space Grotesk font */
+  --font-abel: Abel; /* Define Abel font */
+  --font-adamina: Adamina; /* Define Adamina font */
+  --font-oxanium: Oxanium; /* Define Oxanium font */
+  --font-roboto: Roboto; /* Define Roboto font */
+
+  /* Font sizes */
+  --font-size-base: 16px; /* Base font size */
+  --font-size-10xl: 29px; /* Extra large font size */
+  --font-size-xl: 20px; /* Extra large font size */
+  --font-size-13xl: 32px; /* Extra large font size */
+  --font-size-lgi: 19px; /* Large font size */
+  --font-size-6xl: 25px; /* Extra large font size */
+  --font-size-19xl: 38px; /* Extra large font size */
+  --font-size-5xl: 24px; /* Extra large font size */
+  --font-size-11xl: 30px; /* Extra large font size */
+  --font-size-lg-4: 18.4px; /* Large font size */
+  --font-size-xl-3: 20.3px; /* Extra large font size */
+  --font-size-lg: 18px; /* Large font size */
+  --font-size-base-5: 15.5px; /* Base font size */
+  --font-size-sm-3: 13.3px; /* Small font size */
+  --font-size-base-6: 16.6px; /* Base font size */
+  --font-size-lgi-4: 19.4px; /* Large font size */
+  --font-size-mid-3: 17.3px; /* Medium font size */
+  --font-size-xl-1: 20.1px; /* Extra large font size */
+  --font-size-9xl-8: 28.8px; /* Extra large font size */
+  --font-size-4xl: 23px; /* Extra large font size */
+  --font-size-smi-5: 12.5px; /* Small font size */
+  --font-size-4xs-3: 8.3px; /* Extra small font size */
+  --font-size-sm-4: 13.4px; /* Small font size */
+  --font-size-xs-7: 11.7px; /* Extra small font size */
+  --font-size-mini: 15px; /* Mini font size */
+  --font-size-sm: 14px; /* Small font size */
+  --font-size-xs-3: 11.3px; /* Extra small font size */
+  --font-size-base-8: 15.8px; /* Base font size */
+  --font-size-sm-8: 13.8px; /* Small font size */
+  --font-size-smi-9: 12.9px; /* Small font size */
+  --font-size-smi-2: 12.2px; /* Small font size */
+  --font-size-mini-4: 14.4px; /* Mini font size */
+
+  /* Colors */
+  --color-midnightblue: #002772; /* Midnight blue color */
+  --color-gainsboro: #d9d9d9; /* Gainsboro color */
+  --color-black: #000; /* Black color */
+  --white: #fff; /* White color */
+  --gray-3: #828282; /* Gray color */
+  --color-gray-100: #797d86; /* Gray color */
+  --black-black-12: #23262d; /* Black color */
+  --color-gray-200: #1d1b32; /* Gray color */
+  --color-gray-300: #17191c; /* Gray color */
+  --dark-blue-main-logo: #011334; /* Dark blue color */
+  --black: #100f0f; /* Black color */
+  --color-gray-400: rgba(255, 255, 255, 0.8); /* Gray color with alpha */
+  --color-gray-500: rgba(255, 255, 255, 0.4); /* Gray color with alpha */
+  --color-gray-600: rgba(137, 137, 137, 0.17); /* Gray color with alpha */
+  --gray-4: #bdbdbd; /* Gray color */
+  --active-button1: #b356c1; /* Active button color */
+  --color-whitesmoke-100: #f9f9f9; /* Whitesmoke color */
+  --color-whitesmoke-200: #f7f7f7; /* Whitesmoke color */
+  --black-black-4: #f1f1f1; /* Black color */
+  --color-whitesmoke-300: #e9eaed; /* Whitesmoke color */
+  --color-mediumseagreen-100: #10ab61; /* Medium sea green color */
+  --color-darkslategray-100: #3e4958; /* Dark slate gray color */
+  --black-black-10: #34363d; /* Black color */
+  --color-darkslategray-200: #223344; /* Dark slate gray color */
+  --color-darkslategray-300: #172c41; /* Dark slate gray color */
+  --color-firebrick: #cb1c1c; /* Firebrick color */
+  --color-gold: #f0dc28; /* Gold color */
+  --color-crimson-100: #d90d2d; /* Crimson color */
+  --black-black-8: #64666b; /* Black color */
+  --color-dimgray-100: #5b5b5b; /* Dim gray color */
+  --black-black-7: #939598; /* Black color */
+  --color-darkslateblue-100: #2f4e84; /* Dark slate blue color */
+  --blue-blue-8: #274893; /* Blue color */
+  --color-darkslateblue-200: #023f76; /* Dark slate blue color */
+  --blue-blue-6: #3766cf; /* Blue color */
+  --color-tomato: #ff595e; /* Tomato color */
+  --color-antiquewhite: rgba(249, 227, 214, 0.3); /* Antique white color with alpha */
+  --color-slateblue: #5742a9; /* Slate blue color */
+  --color-mediumslateblue: #2648d1; /* Medium slate blue color */
+  --color-lavenderblush-100: #fee6eb; /* Lavender blush color */
+  --color-ghostwhite: #f2f0f9; /* Ghost white color */
+
+  /* Gaps */
+  --gap-30xl: 49px; /* Gap size */
+  --gap-5xl: 24px; /* Gap size */
+  --gap-mid: 17px; /* Gap size */
+  --gap-27xl: 46px; /* Gap size */
+  --gap-4xl: 23px; /* Gap size */
+  --gap-base-9: 16.9px; /* Gap size */
+  --gap-xs-3: 11.3px; /* Gap size */
+  --gap-3xl-5: 22.5px; /* Gap size */
+  --gap-xl: 20px; /* Gap size */
+  --gap-sm-4: 13.4px; /* Gap size */
+  --gap-3xl-1: 22.1px; /* Gap size */
+  --gap-8xs-4: 4.4px; /* Gap size */
+  --gap-base-6: 16.6px; /* Gap size */
+  --gap-11xs-4: 1.4px; /* Gap size */
+  --gap-xs-1: 11.1px; /* Gap size */
+  --gap-10xs-8: 2.8px; /* Gap size */
+  --gap-7xs-5: 5.5px; /* Gap size */
+  --gap-0: 0px; /* Gap size */
+  --gap-mid-3: 17.3px; /* Gap size */
+  --gap-mid-2: 17.2px; /* Gap size */
+  --gap-7xs-8: 5.8px; /* Gap size */
+  --gap-9xs-2: 3.2px; /* Gap size */
+  --gap-5xs: 8px; /* Gap size */
+  --gap-smi-9: 12.9px; /* Gap size */
+  --gap-6xs-5: 6.5px; /* Gap size */
+  --gap-52xl: 71px; /* Gap size */
+
+  /* Paddings */
+--padding-81xl: 100px; /* Padding size */
+--padding-xl: 20px; /* Padding size */
+--padding-31xl: 50px; /* Padding size */
+--padding-2xl: 21px; /* Padding size */
+--padding-6xl: 25px; /* Padding size */
+--padding-21xl: 40px; /* Padding size */
+--padding-15xl: 34px; /* Padding size */
+--padding-14xl: 33px; /* Padding size */
+--padding-9xl: 28px; /* Padding size */
+--padding-4xl: 23px; /* Padding size */
+--padding-2xs: 11px; /* Padding size */
+--padding-25xl: 44px; /* Padding size */
+--padding-37xl: 56px; /* Padding size */
+--padding-17xl: 36px; /* Padding size */
+--padding-3xs: 10px; /* Padding size */
+--padding-smi: 13px; /* Padding size */
+--padding-xs: 12px; /* Padding size */
+--padding-32xl: 51px; /* Padding size */
+--padding-12xs-1: 0.1px; /* Padding size */
+--padding-8xs: 5px; /* Padding size */
+--padding-11xs: 2px; /* Padding size */
+--padding-12xs: 1px; /* Padding size */
+--padding-8xl: 27px; /* Padding size */
+--padding-sm-3: 13.3px; /* Padding size */
+--padding-lg: 18px; /* Padding size */
+--padding-mid: 17px; /* Padding size */
+--padding-base: 16px; /* Padding size */
+--padding-5xl: 24px; /* Padding size */
+--padding-10xs: 3px; /* Padding size */
+--padding-9xs: 4px; /* Padding size */
+--padding-11xs-1: 1.1px; /* Padding size */
+--padding-10xs-2: 2.2px; /* Padding size */
+--padding-4xs: 9px; /* Padding size */
+--padding-7xs: 6px; /* Padding size */
+--padding-7xl: 26px; /* Padding size */
+--padding-3xl: 22px; /* Padding size */
+--padding-xs-1: 11.1px; /* Padding size */
+--padding-11xl: 30px; /* Padding size */
+--padding-16xl: 35px; /* Padding size */
+--padding-base-6: 16.6px; /* Padding size */
+--padding-36xl: 55px; /* Padding size */
+--padding-sm: 14px; /* Padding size */
+--padding-5xs: 8px; /* Padding size */
+--padding-base-9: 16.9px; /* Padding size */
+--padding-588xl: 607px; /* Padding size */
+--padding-284xl: 303px; /* Padding size */
+--padding-mini: 15px; /* Padding size */
+--padding-6xs: 7px; /* Padding size */
+--padding-10xs-1: 2.1px; /* Padding size */
+--padding-smi-9: 12.9px; /* Padding size */
+--padding-54xl: 73px; /* Padding size */
+
+/* Border radiuses */
+--br-xl: 20px; /* Border radius size */
+--br-xs-5: 11.5px; /* Border radius size */
+--br-91xl-7: 110.7px; /* Border radius size */
+--br-xs-1: 11.1px; /* Border radius size */
+--br-119xl-3: 138.3px; /* Border radius size */
+--br-4xs-4: 8.4px; /* Border radius size */
+--br-xs: 12px; /* Border radius size */
+--br-13xl-3: 32.3px; /* Border radius size */
+--br-6xs-5: 6.5px; /* Border radius size */
+--br-58xl-4: 77.4px; /* Border radius size */
+--br-16xl: 35px; /* Border radius size */
+
+/* Effects */
+--shadow: 64px 76.8px 80px rgba(0, 0, 0, 0.07), /* Shadow effect */
+          41.5px 49.8px 46.85px rgba(0, 0, 0, 0.05), /* Shadow effect */
+          24.7px 29.6px 25.48px rgba(0, 0, 0, 0.04), /* Shadow effect */
+          12.8px 15.4px 13px rgba(0, 0, 0, 0.04), /* Shadow effect */
+          5.2px 6.3px 6.52px rgba(0, 0, 0, 0.03), /* Shadow effect */
+          1.2px 1.4px 3.15px rgba(0, 0, 0, 0.02); /* Shadow effect */
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <!-- External stylesheets -->
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./page-5.css" />
+
+    <!-- Google Fonts stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Abel:wght@500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Adamina:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Space Grotesk:wght@700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+    />
+  </head>
+  <body>
+    <!-- Main container for page content -->
+    <div class="page-5">
+
+      <!-- Logo image -->
+      <img class="logo-icon" alt="" src="./public/logo@2x.png" id="logoImage" />
+
+      <!-- Header section -->
+      <header class="header">
+        <!-- Main site title and navigation links -->
+        <a class="goalieswatch" id="goaliesWatchText" href="index.html">GoaliesWatch</a>
+        <a class="contact" id="contactText" href="page-4.html">Contact</a>
+        <!-- Navigation menu for team information -->
+        <nav class="team-info">
+          <div class="team-info-child"></div>
+          <div class="about">
+            <a class="about-us" href="page-5.html">About Us</a>
+          </div>
+          <a class="team-standings" id="teamStandingsText" href="page-2.html">Team Standings</a>
+          <a class="upcoming-match" id="upcomingMatchText" href="page-3.html">Upcoming Match</a>
+        </nav>
+      </header>
+
+      <!-- Main content area -->
+      <main class="content">
+        <!-- Main section -->
+        <section class="main">
+          <div class="main-child"></div>
+          <!-- Information section -->
+          <div class="info">
+            <h1 class="about-us1">About Us</h1>
+          </div>
+          <!-- Welcome message and details -->
+          <p class="welcome-to-our-container">
+            <span class="welcome-to-our"
+              >Welcome to our premier football hub!Your one-stop destination
+              for everything related to football.
+            </span>
+            <span class="blank-line">&nbsp;</span>
+            <span class="here-we-provide"
+              >Here, we provide up-to-the-minute game standings, keeping you
+              informed on how your favorite teams are performing in their
+              leagues. Stay ahead with our comprehensive coverage of upcoming
+              matches, so you never miss a moment of the action.
+            </span>
+            <span class="blank-line1">&nbsp;</span>
+            <span class="our-real-time-weather"
+              >Our real-time weather updates ensure you're always prepared for
+              game day, whether you're heading to the stadium or watching from
+              home. For those who like to add a bit of thrill to their football
+              experience, our betting insights offer local currency conversion
+              for your convenience. Join our community of passionate football
+              fans and enhance your game day experience like never before!</span
+            >
+          </p>
+          <!-- Data sources section -->
+          <div class="sources">
+            <div class="data">
+              <div class="provider">
+                <div class="data-sources">Data sources:</div>
+              </div>
+              <!-- Specific data sources listed -->
+              <p class="sportmonks-openweathermap-cu-container">
+                <span class="sportmonks-openweathermap-cu"
+                  >SportMonks, OpenWeatherMap, CurrencyFreaks API</span
+                >
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer section -->
+        <section class="footer">
+          <div class="footer-child"></div>
+          <!-- Rights section -->
+          <div class="rights">
+            <h3 class="all-rights-reserved">All Rights Reserved.</h3>
+          </div>
+          <!-- Developer information -->
+          <p class="developed-by-kerem">
+            Developed by: Kerem Ciftci, Rod Macaspac, Muzzammil Haqani
+          </p>
+        </section>
+      </main>
+    </div>
+
+    <!-- JavaScript section for handling click events on navigation links -->
+    <script>
+      var logoImage = document.getElementById("logoImage");
+      if (logoImage) {
+        // Redirect to page4.html on logo click
+        logoImage.addEventListener("click", function (e) {
+          window.location.href = "./page4.html";
+        });
+      }
+      
+      var goaliesWatchText = document.getElementById("goaliesWatchText");
+      if (goaliesWatchText) {
+        // Redirect to page4.html when GoaliesWatch link is clicked
+        goaliesWatchText.addEventListener("click", function (e) {
+          window.location.href = "./page4.html";
+        });
+      }
+      
+      var contactText = document.getElementById("contactText");
+      if (contactText) {
+        // Redirect to page1.html when Contact link is clicked
+        contactText.addEventListener("click", function (e) {
+          window.location.href = "./page1.html";
+        });
+      }
+      
+      var teamStandingsText = document.getElementById("teamStandingsText");
+      if (teamStandingsText) {
+        // Redirect to page3.html when Team Standings link is clicked
+        teamStandingsText.addEventListener("click", function (e) {
+          window.location.href = "./page3.html";
+        });
+      }
+      
+      var upcomingMatchText = document.getElementById("upcomingMatchText");
+      if (upcomingMatchText) {
+        // Redirect to page2.html when Upcoming Match link is clicked
+        upcomingMatchText.addEventListener("click", function (e) {
+          window.location.href = "./page2.html";
+        });
+      }
+    </script>
+  </body>
+</html>
