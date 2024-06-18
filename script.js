@@ -1,3 +1,43 @@
+// Replace with your actual OpenWeatherMap API key
+const WEATHER_API_KEY = "bdaf16129d27ee10052d17781d9bbaf5";
+const CURRENCY_API_KEY = "2424e51a1db349e9aaf9881485d65770";
+
+// Function to fetch weather data
+const getWeather = async (city) => {
+  try {
+    const response = await fetch(
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${WEATHER_API_KEY}&units=metric`
+    );
+    if (!response.ok) {
+      throw new Error("Network response was not ok " + response.statusText);
+    }
+    const data = await response.json();
+    console.log(data);
+    displayWeather(data);
+  } catch (error) {
+    console.error("Error fetching weather:", error);
+  }
+};
+
+
+// Function to display weather data
+const displayWeather = (data) => {
+  const weatherDiv = document.getElementById("weather");
+  const weatherHTML = `
+    <h2>Weather in ${data.name}</h2>
+    <p><strong>Temperature:</strong> ${data.main.temp} °C</p>
+    <p><strong>Weather:</strong> ${data.weather[0].description}</p>
+    <p><strong>Humidity:</strong> ${data.main.humidity}%</p>
+    <p><strong>Wind Speed:</strong> ${data.wind.speed} m/s</p>
+  `;
+  weatherDiv.innerHTML = weatherHTML;
+};
+
+// Fetch and display the weather for a given city
+getWeather("London");
+
+/*
+/////////////////////////////////////////////////////////
 // Replace with your actual Sportmonks API key
 const API_KEY = "pEfNJbOZOF8gFPG6wvNbsp1kKv7sIeKcIhCUp7z0ZhbxOcHpB3ysnH7BPbkF";
 
@@ -86,3 +126,4 @@ const displayFixtures = (data) => {
     fixtureListDiv.appendChild(fixtureDiv);
   });
 };
+*/
