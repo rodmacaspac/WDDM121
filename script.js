@@ -19,6 +19,22 @@ const getWeather = async (city) => {
   }
 };
 
+// Function to fetch currency exchange rates
+const getExchangeRates = async (baseCurrency) => {
+  try {
+    const response = await fetch(
+      `https://api.currencyfreaks.com/v2.0/rates/latest?apikey=${CURRENCY_API_KEY}&symbols=${baseCurrency}`
+    );
+    if (!response.ok) {
+      throw new Error("Network response was not ok " + response.statusText);
+    }
+    const data = await response.json();
+    console.log(data);
+    displayExchangeRates(data);
+  } catch (error) {
+    console.error("Error fetching exchange rates:", error);
+  }
+};
 
 // Function to display weather data
 const displayWeather = (data) => {
@@ -32,6 +48,19 @@ const displayWeather = (data) => {
   `;
   weatherDiv.innerHTML = weatherHTML;
 };
+
+// Function to display exchange rates
+const displayExchangeRates = (data) => {
+  const exchangeRatesDiv = document.getElementById("exchange-rates");
+  let exchangeRatesHTML = `<h2>Exchange Rates (Base: ${data.base})</h2>`;
+  for (const [currency, rate] of Object.entries(data.rates)) {
+    exchangeRatesHTML += `<p><strong>${currency}:</strong> ${rate}</p>`;
+  }
+  exchangeRatesDiv.innerHTML = exchangeRatesHTML;
+};
+
+// Fetch and display exchange rates for a given base currency
+getExchangeRates("USD,EUR,CAD");
 
 // Fetch and display the weather for a given city
 getWeather("London");
