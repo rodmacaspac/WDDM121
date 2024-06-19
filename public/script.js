@@ -1,3 +1,64 @@
+// Replace with your actual OpenWeatherMap API key
+const CURRENCY_API_KEY = "2424e51a1db349e9aaf9881485d65770";
+
+/*
+const WEATHER_API_KEY = "bdaf16129d27ee10052d17781d9bbaf5";
+// Function to fetch weather data
+const getWeather = async (city) => {
+  try {
+    const response = await fetch(
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${WEATHER_API_KEY}&units=metric`
+    );
+    if (!response.ok) {
+      throw new Error("Network response was not ok " + response.statusText);
+    }
+    const data = await response.json();
+    console.log(data);
+    displayWeather(data);
+  } catch (error) {
+    console.error("Error fetching weather:", error);
+  }
+};
+
+
+// Function to display weather data
+const displayWeather = (data) => {
+  const weatherDiv = document.getElementById("weather");
+  const weatherHTML = `
+    <h2>Weather in ${data.name}</h2>
+    <p><strong>Temperature:</strong> ${data.main.temp} °C</p>
+    <p><strong>Weather:</strong> ${data.weather[0].description}</p>
+    <p><strong>Humidity:</strong> ${data.main.humidity}%</p>
+    <p><strong>Wind Speed:</strong> ${data.wind.speed} m/s</p>
+  `;
+  weatherDiv.innerHTML = weatherHTML;
+};
+
+// Fetch and display the weather for a given city
+getWeather("London");
+
+*/
+// Function to fetch currency exchange rates
+const getExchangeRates = async (baseCurrency) => {
+  try {
+    const response = await fetch(
+      `https://api.currencyfreaks.com/v2.0/rates/latest?apikey=${CURRENCY_API_KEY}&symbols=${baseCurrency}`
+      //`https://api.currencyfreaks.com/v2.0/supported-currencies?apikey=${CURRENCY_API_KEY}`
+    );
+    if (!response.ok) {
+      throw new Error("Network response was not ok " + response.statusText);
+    }
+    const data = await response.json();
+    console.log(data);
+    //displayExchangeRates(data);
+
+    display(data);
+  } catch (error) {
+    console.error("Error fetching exchange rates:", error);
+  }
+};
+let currency_code;
+
 const currencyMap = {
   supportedCurrenciesMap: {
     AGLD: {
@@ -7543,143 +7604,25 @@ const currencyMap = {
   },
 };
 
-// Handle form submission
-const searchForm = document.getElementById("searchForm");
-searchForm.addEventListener("submit", async (event) => {
-  event.preventDefault();
+// Function to display exchange rates
+const display = (data) => {
+  console.log(data);
 
-  // Get the team name input value
-  const teamName = document.getElementById("teamName").value.trim();
-  console.log(teamName);
+  for (const currencyKey in currencyMap.supportedCurrenciesMap) {
+    if (data.supportedCurrenciesMap.hasOwnProperty(currencyKey)) {
+      const currencyDetails = data.supportedCurrenciesMap[currencyKey];
 
-  try {
-    const response = await fetch(
-      `/api/search?teamName=${encodeURIComponent(teamName)}`
-    );
-    if (!response.ok) {
-      throw new Error("Network response was not ok");
-    }
-    const data = await response.json();
-    console.log(data);
-
-    displaySearchResults(data);
-  } catch (error) {
-    console.error("Error searching for team:", error);
-    // Display an error message or handle the error appropriately
-  }
-});
-
-let city_name;
-let country_code;
-
-// Display search results
-const displaySearchResults = (data) => {
-  const searchResults = document.getElementById("searchResults");
-  searchResults.innerHTML = "";
-
-  if (data.length === 0) {
-    searchResults.innerHTML = "<p>No results found.</p>";
-    return;
-  }
-
-  const team = data.data[0];
-  console.log(team);
-
-  const formatDate = (dateString) => {
-    const date = new Date(dateString);
-    return `${date.toLocaleDateString()} ${date.toLocaleTimeString()}`;
-  };
-
-  city_name = team.venue.city_name;
-  country_code = team.country.iso2;
-
-  const search = `
-        <h2>${team.name}</h2>
-        <p><strong>Short Code:</strong> ${team.short_code}</p>
-        <img src="${team.image_path}" alt="${team.name} Logo" class="team-logo">
-        <p><strong>Country:</strong> ${team.country.name}</p>
-        <p><strong>City:</strong> ${team.venue.city_name}</p>
-        <p><strong>Stadium:</strong> ${team.venue.name}</p>
-        <p><strong>Address:</strong> ${team.venue.address}</p>
-        <img src="${team.venue.image_path}" alt="${
-    team.name
-  } Logo" class="team-logo" width="200">
-        <p><strong>Latest Match:</strong> ${team.latest[0].name}</p>
-        <p><strong>Starting At:</strong> ${formatDate(
-          team.latest[0].starting_at
-        )}</p>
-        <p><strong>Result:</strong> ${team.latest[0].result_info}</p>
-      `;
-
-  searchResults.innerHTML = search;
-
-  getWeather();
-};
-
-const getWeather = async () => {
-  try {
-    const response = await fetch(
-      `/api/weather?city=${encodeURIComponent(city_name)}`
-    );
-    if (!response.ok) {
-      throw new Error("Network response was not ok");
-    }
-    const data = await response.json();
-    console.log(data);
-    displayWeather(data);
-  } catch (error) {
-    console.error("Error searching for team:", error);
-    // Display an error message or handle the error appropriately
-  }
-};
-const displayWeather = (data) => {
-  const weatherDiv = document.getElementById("weather");
-  const weatherHTML = `
-      <h2>Weather in ${data.name}</h2>
-      <p><strong>Temperature:</strong> ${data.main.temp} °C</p>
-      <p><strong>Feels Like:</strong> ${data.main.feels_like} °C</p>
-      <p><strong>Weather:</strong> ${data.weather[0].description}</p>
-      <p><strong>Humidity:</strong> ${data.main.humidity}%</p>
-      <p><strong>Wind Speed:</strong> ${data.wind.speed} m/s</p>
-    `;
-  weatherDiv.innerHTML = weatherHTML;
-
-  getCurrency();
-};
-
-let currency_code;
-
-const getCurrency = async () => {
-  try {
-    for (const currencyKey in currencyMap.supportedCurrenciesMap) {
-      if (currencyMap.supportedCurrenciesMap.hasOwnProperty(currencyKey)) {
-        const currencyDetails = currencyMap.supportedCurrenciesMap[currencyKey];
-
-        if (currencyDetails.countryCode == country_code) {
-          console.log(`Currency Name: ${currencyDetails.countryCode}`);
-          console.log(`Currency Code: ${currencyDetails.currencyCode}`);
-          currency_code = currencyDetails.currencyCode;
-          break;
-        }
+      if (currencyDetails.countryCode == "GB") {
+        console.log(`Currency Name: ${currencyDetails.countryCode}`);
+        console.log(`Currency Code: ${currencyDetails.currencyCode}`);
+        currency_code = currencyDetails.currencyCode;
       }
     }
-
-    const response = await fetch(
-      `/api/currency?currency=${encodeURIComponent(currency_code)}`
-    );
-    if (!response.ok) {
-      throw new Error("Network response was not ok");
-    }
-    const data = await response.json();
-    console.log(data);
-    displayCurrency(data);
-  } catch (error) {
-    console.error("Error searching for team:", error);
-    // Display an error message or handle the error appropriately
   }
 };
 
-const displayCurrency = (data) => {
+// Function to display exchange rates
+const displayExchangeRates = (data) => {
   const exchangeRatesDiv = document.getElementById("exchange-rates");
   let exchangeRatesHTML = `<h2>Exchange Rates (Base: ${data.base})</h2>`;
   for (const [currency, rate] of Object.entries(data.rates)) {
@@ -7687,3 +7630,97 @@ const displayCurrency = (data) => {
   }
   exchangeRatesDiv.innerHTML = exchangeRatesHTML;
 };
+
+// Fetch and display exchange rates for a given base currency
+getExchangeRates("USD,EUR,CAD");
+/*
+
+/////////////////////////////////////////////////////////
+// Replace with your actual Sportmonks API key
+const API_KEY = "pEfNJbOZOF8gFPG6wvNbsp1kKv7sIeKcIhCUp7z0ZhbxOcHpB3ysnH7BPbkF";
+
+const countryid = "1161";
+const getTeams = async () => {
+  try {
+    const response = await fetch(
+      `https://cors-anywhere.herokuapp.com/https://api.sportmonks.com/v3/football/fixtures?page=10?api_token=${API_KEY}`
+      //`https://cors-anywhere.herokuapp.com/https://api.sportmonks.com/v3/football/teams/countries/${countryid}?api_token=${API_KEY}`
+    );
+    if (!response.ok) {
+      throw new Error("Network response was not ok " + response.statusText);
+    }
+    const data = await response.json();
+    console.log(data);
+    displayFixtures(data);
+  } catch (error) {
+    console.error("Error fetching teams:", error);
+  }
+};
+
+// Fetch and log the teams to find the team ID
+//getTeams();
+
+const getLatestFixtures = async () => {
+  try {
+    // Get today's date
+    const today = new Date();
+    const endDate = today.toISOString().split("T")[0]; // Format: YYYY-MM-DD
+    // Set the start date to fetch matches from a week ago
+    const startDate = new Date(today.setDate(today.getDate() - 50))
+      .toISOString()
+      .split("T")[0]; // Format: YYYY-MM-DD
+
+    const response = await fetch(
+      `https://cors-anywhere.herokuapp.com/https://api.sportmonks.com/v3/football/fixtures/between/${startDate}/${endDate}?api_token=${API_KEY}&include=venue;`
+    );
+    if (!response.ok) {
+      throw new Error("Network response was not ok " + response.statusText);
+    }
+    const data = await response.json();
+    console.log(data);
+    displayFixtures(data);
+  } catch (error) {
+    console.error("Error fetching latest fixtures:", error);
+  }
+};
+
+// Fetch and display the latest fixtures
+getLatestFixtures();
+
+const displayFixtures = (data) => {
+  //const fixtures = JSON.parse(jsonResponse).data;
+  const fixtures = data.data;
+
+  // Get the div where fixture list will be displayed
+  const fixtureListDiv = document.getElementById("fixture-list");
+
+  // Function to format date
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    return `${date.toLocaleDateString()} ${date.toLocaleTimeString()}`;
+  };
+
+  // Loop through fixture data and create HTML elements
+  fixtures.forEach((fixture) => {
+    // Create a div for each fixture
+    const fixtureDiv = document.createElement("div");
+    fixtureDiv.classList.add("fixture");
+
+    // Create HTML content for the fixture
+    const fixtureHTML = `
+                <h2>${fixture.name}</h2>
+                <p><strong>Starting At:</strong> ${formatDate(
+                  fixture.starting_at
+                )}</p>
+                <p><strong>Result Info:</strong> ${fixture.result_info}</p>
+                <p><strong>Venue:</strong> ${fixture.venue.name}</p>
+                <p><strong>Address:</strong> ${fixture.venue.address}</p>
+            `;
+
+    // Set the HTML content to the fixture div
+    fixtureDiv.innerHTML = fixtureHTML;
+
+    // Append the fixture div to the fixture list div
+    fixtureListDiv.appendChild(fixtureDiv);
+  });
+};*/

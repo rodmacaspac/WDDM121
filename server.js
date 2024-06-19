@@ -8,6 +8,7 @@ const port = 3000;
 // Replace with your actual Sportmonks API key
 const API_KEY = "pEfNJbOZOF8gFPG6wvNbsp1kKv7sIeKcIhCUp7z0ZhbxOcHpB3ysnH7BPbkF";
 const WEATHER_API_KEY = "bdaf16129d27ee10052d17781d9bbaf5";
+const CURRENCY_API_KEY = "2424e51a1db349e9aaf9881485d65770";
 const seasonId = "19735";
 
 app.use(cors());
@@ -96,7 +97,27 @@ app.get('/api/weather', async (req, res) => {
     res.status(500).json({ error: 'Error fetching weather data' });
   }
 });
+const base = "CAD";
+// Endpoint to fetch currency data
+app.get('/api/currency', async (req, res) => {
+  const { currency } = req.query;
 
+  try {
+    const response = await fetch(
+      `https://api.currencyfreaks.com/v2.0/rates/latest?apikey=${CURRENCY_API_KEY}&symbols=${currency}`
+    );
+    
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    
+    const data = await response.json();
+    res.json(data);
+  } catch (error) {
+    console.error('Error fetching currency:', error);
+    res.status(500).json({ error: 'Error fetching currency data' });
+  }
+});
 
 app.get('/test', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'test.html'));
