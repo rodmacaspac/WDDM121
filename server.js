@@ -7,6 +7,7 @@ const port = 3000;
 
 // Replace with your actual Sportmonks API key
 const API_KEY = "pEfNJbOZOF8gFPG6wvNbsp1kKv7sIeKcIhCUp7z0ZhbxOcHpB3ysnH7BPbkF";
+const seasonId = "19735";
 
 app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
@@ -32,6 +33,23 @@ app.get('/api/fixtures', async (req, res) => {
     res.json(data);
   } catch (error) {
     console.error("Error fetching latest fixtures:", error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.get('/api/standings', async (req, res) => {
+  const fetch = (await import('node-fetch')).default; // Dynamic import
+  try {
+    const response = await fetch(
+      `https://api.sportmonks.com/v3/football/standings/seasons/${seasonId}?api_token=${API_KEY}&include=participant`
+    );
+    if (!response.ok) {
+      throw new Error("Network response was not ok " + response.statusText);
+    }
+    const data = await response.json();
+    res.json(data);
+  } catch (error) {
+    console.error("Error fetching standings:", error);
     res.status(500).json({ error: error.message });
   }
 });
