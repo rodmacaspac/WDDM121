@@ -51,6 +51,17 @@
 
     <img class="logo-icon2" alt="" src="./public/logo@2x.png" id="logoImage" />
 
+    <h1>Search Team</h1>
+  <form id="searchForm">
+    <label for="teamName">Enter Team Name:</label>
+    <input type="text" id="teamName" name="teamName" placeholder="Enter team name...">
+    <button type="submit">Search</button>
+  </form>
+
+  <div id="searchResults">
+    <!-- Results will be displayed here -->
+  </div>
+
     <div class="card2-prematch">
       <div class="frame-parent">
         <div class="united-nations-title-parent">
@@ -591,6 +602,8 @@
     </main>
   </div>
 
+    <script src="search.js"></script>
+    
   <script>
     // Functionality for 'About Us' link
     var aboutUsText = document.getElementById("aboutUsText");
