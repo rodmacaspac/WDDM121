@@ -7,6 +7,7 @@ const port = 3000;
 
 // Replace with your actual Sportmonks API key
 const API_KEY = "pEfNJbOZOF8gFPG6wvNbsp1kKv7sIeKcIhCUp7z0ZhbxOcHpB3ysnH7BPbkF";
+const WEATHER_API_KEY = "bdaf16129d27ee10052d17781d9bbaf5";
 const seasonId = "19735";
 
 app.use(cors());
@@ -75,6 +76,26 @@ app.get('/api/search', async (req, res) => {
   }
 });
 
+// Endpoint to fetch weather data
+app.get('/api/weather', async (req, res) => {
+  const { city } = req.query;
+
+  try {
+    const response = await fetch(
+      `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${WEATHER_API_KEY}&units=metric`
+    );
+    
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    
+    const data = await response.json();
+    res.json(data);
+  } catch (error) {
+    console.error('Error fetching weather:', error);
+    res.status(500).json({ error: 'Error fetching weather data' });
+  }
+});
 
 
 app.get('/test', (req, res) => {

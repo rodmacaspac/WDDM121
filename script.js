@@ -1,7 +1,7 @@
 // Replace with your actual OpenWeatherMap API key
-const WEATHER_API_KEY = "bdaf16129d27ee10052d17781d9bbaf5";
 const CURRENCY_API_KEY = "2424e51a1db349e9aaf9881485d65770";
 
+const WEATHER_API_KEY = "bdaf16129d27ee10052d17781d9bbaf5";
 // Function to fetch weather data
 const getWeather = async (city) => {
   try {
@@ -18,6 +18,24 @@ const getWeather = async (city) => {
     console.error("Error fetching weather:", error);
   }
 };
+
+
+// Function to display weather data
+const displayWeather = (data) => {
+  const weatherDiv = document.getElementById("weather");
+  const weatherHTML = `
+    <h2>Weather in ${data.name}</h2>
+    <p><strong>Temperature:</strong> ${data.main.temp} °C</p>
+    <p><strong>Weather:</strong> ${data.weather[0].description}</p>
+    <p><strong>Humidity:</strong> ${data.main.humidity}%</p>
+    <p><strong>Wind Speed:</strong> ${data.wind.speed} m/s</p>
+  `;
+  weatherDiv.innerHTML = weatherHTML;
+};
+
+// Fetch and display the weather for a given city
+getWeather("London");
+
 
 // Function to fetch currency exchange rates
 const getExchangeRates = async (baseCurrency) => {
@@ -36,18 +54,6 @@ const getExchangeRates = async (baseCurrency) => {
   }
 };
 
-// Function to display weather data
-const displayWeather = (data) => {
-  const weatherDiv = document.getElementById("weather");
-  const weatherHTML = `
-    <h2>Weather in ${data.name}</h2>
-    <p><strong>Temperature:</strong> ${data.main.temp} °C</p>
-    <p><strong>Weather:</strong> ${data.weather[0].description}</p>
-    <p><strong>Humidity:</strong> ${data.main.humidity}%</p>
-    <p><strong>Wind Speed:</strong> ${data.wind.speed} m/s</p>
-  `;
-  weatherDiv.innerHTML = weatherHTML;
-};
 
 // Function to display exchange rates
 const displayExchangeRates = (data) => {
@@ -62,8 +68,6 @@ const displayExchangeRates = (data) => {
 // Fetch and display exchange rates for a given base currency
 getExchangeRates("USD,EUR,CAD");
 
-// Fetch and display the weather for a given city
-getWeather("London");
 
 /////////////////////////////////////////////////////////
 // Replace with your actual Sportmonks API key
