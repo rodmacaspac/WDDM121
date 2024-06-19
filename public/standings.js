@@ -26,13 +26,8 @@ const displayStandings = (data) => {
 
     row.innerHTML = `
       <td>${index + 1}</td>
+      <td><img src="${standing.participant.image_path}" alt="${standing.participant.name} Logo" class="team-logo"></td>
       <td>${standing.participant.name}</td>
-      <td>${standing.games_played}</td>
-      <td>${standing.won}</td>
-      <td>${standing.draw}</td>
-      <td>${standing.lost}</td>
-      <td>${standing.goals_scored}</td>
-      <td>${standing.goals_against}</td>
       <td>${standing.points}</td>
     `;
 
