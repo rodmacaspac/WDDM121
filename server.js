@@ -54,6 +54,29 @@ app.get('/api/standings', async (req, res) => {
   }
 });
 
+app.get('/api/search', async (req, res) => {
+  const fetch = (await import('node-fetch')).default; // Dynamic import
+  const { teamName } = req.query;
+  
+  try {
+    const response = await fetch(
+      `https://api.sportmonks.com/v3/football/teams/search/${teamName}?api_token=${API_KEY}&include=latest;country;venue`
+    );
+    if (!response.ok) {
+      throw new Error('Network response was not ok');
+    }
+    const data = await response.json();
+
+    res.json(data);
+
+  } catch (error) {
+    console.error('Error searching for team:', error);
+    res.status(500).json({ error: 'Error searching for team' });
+  }
+});
+
+
+
 app.get('/test', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'test.html'));
 

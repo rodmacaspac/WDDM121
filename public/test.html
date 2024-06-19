@@ -26,7 +26,17 @@
             <!-- Standings will be dynamically inserted here -->
         </tbody>
     </table>
+    <h1>Search Team</h1>
+  <form id="searchForm">
+    <label for="teamName">Enter Team Name:</label>
+    <input type="text" id="teamName" name="teamName" placeholder="Enter team name...">
+    <button type="submit">Search</button>
+  </form>
 
-    <script src="standings.js"></script>
+  <div id="searchResults">
+    <!-- Results will be displayed here -->
+  </div>
+
+    <script src="search.js"></script>
   </body>
 </html>
