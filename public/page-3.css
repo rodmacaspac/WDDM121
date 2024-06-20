@@ -3300,3 +3300,40 @@ h1 {
   font-family: var(--font-poppins);
   color: #fff;
 }
+
+
+/*ROD*/
+.group-wrapper {
+  width: 1366px;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0 var(--padding-6xs);
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--color-darkslategray-100);
+  font-family: var(--font-oxanium);
+}
+
+.group1 {
+  flex: 1;
+  box-shadow: var(--shadow);
+  background-color: var(--color-gray-500);
+  flex-wrap: wrap;
+  padding: var(--padding-17xl) var(--padding-16xl) var(--padding-17xl) 38px;
+  box-sizing: border-box;
+  gap: 27.6px;
+  max-width: 100%;
+}
+
+.bg {
+  height: 144px;
+  width: 1352px;
+  position: relative;
+  box-shadow: var(--shadow);
+  border-radius: var(--br-xs);
+  background-color: var(--color-gray-500);
+  display: none;
+  max-width: 100%;
+}
