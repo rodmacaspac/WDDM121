@@ -7594,6 +7594,7 @@ const displaySearchResults = (data) => {
   country_code = team.country.iso2;
 
   const search = `
+ <div class="search-results1">
         <h2>${team.name}</h2>
         <p><strong>Short Code:</strong> ${team.short_code}</p>
         <img src="${team.image_path}" alt="${team.name} Logo" class="team-logo">
@@ -7603,12 +7604,12 @@ const displaySearchResults = (data) => {
         <p><strong>Address:</strong> ${team.venue.address}</p>
         <img src="${team.venue.image_path}" alt="${
     team.name
-  } Logo" class="team-logo" width="200">
+  } Logo" class="team-logo" width="300">
         <p><strong>Latest Match:</strong> ${team.latest[0].name}</p>
         <p><strong>Starting At:</strong> ${formatDate(
           team.latest[0].starting_at
         )}</p>
-        <p><strong>Result:</strong> ${team.latest[0].result_info}</p>
+ </div>
       `;
 
   searchResults.innerHTML = search;
@@ -7635,12 +7636,15 @@ const getWeather = async () => {
 const displayWeather = (data) => {
   const weatherDiv = document.getElementById("weather");
   const weatherHTML = `
+ <div class="search-results1">
       <h2>Weather in ${data.name}</h2>
       <p><strong>Temperature:</strong> ${data.main.temp} °C</p>
       <p><strong>Feels Like:</strong> ${data.main.feels_like} °C</p>
       <p><strong>Weather:</strong> ${data.weather[0].description}</p>
       <p><strong>Humidity:</strong> ${data.main.humidity}%</p>
       <p><strong>Wind Speed:</strong> ${data.wind.speed} m/s</p>
+      
+ </div>
     `;
   weatherDiv.innerHTML = weatherHTML;
 
@@ -7681,7 +7685,8 @@ const getCurrency = async () => {
 
 const displayCurrency = (data) => {
   const exchangeRatesDiv = document.getElementById("exchange-rates");
-  let exchangeRatesHTML = `<h2>Exchange Rates (Base: ${data.base})</h2>`;
+  let exchangeRatesHTML = `
+ <div class="search-results1"><h2>Exchange Rates (Base: ${data.base})</h2>`;
   for (const [currency, rate] of Object.entries(data.rates)) {
     exchangeRatesHTML += `<p><strong>${currency}:</strong> ${rate}</p>`;
   }

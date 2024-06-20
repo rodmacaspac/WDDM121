@@ -3204,7 +3204,7 @@ h1 {
   border-radius: var(--br-xs);
 }
 
-#search-results {
+.search-results1 {
   padding: 20px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
@@ -3215,23 +3215,24 @@ h1 {
   font-family: Arial, sans-serif;
 }
 
-#search-results h2 {
+.search-results1 h2 {
   color: #333;
   font-size: 24px;
   margin-bottom: 10px;
+  text-align: center;
 }
 
-#search-results p {
+.search-results1 p {
   color: #555;
   font-size: 16px;
   margin: 5px 0;
 }
 
-#search-results p strong {
+.search-results1 p strong {
   color: #000;
 }
 
-#search-results .team-logo {
+.search-results1 .team-logo {
   display: block;
   max-width: 100%;
   height: auto;
