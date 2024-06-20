@@ -7596,7 +7596,6 @@ const displaySearchResults = (data) => {
   const search = `
  <div class="search-results1">
         <h2>${team.name}</h2>
-        <p><strong>Short Code:</strong> ${team.short_code}</p>
         <img src="${team.image_path}" alt="${team.name} Logo" class="team-logo">
         <p><strong>Country:</strong> ${team.country.name}</p>
         <p><strong>City:</strong> ${team.venue.city_name}</p>
