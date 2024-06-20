@@ -110,54 +110,64 @@
       #searchForm button:hover {
         background-color: #0056b3;
       }
-      
 
+      .containernew {
+        display: flex;
+        flex-direction: column;
+        min-height: 150vh;
+      }
+      .page-3 {
+        flex: 2;
+      }
     </style>
   </head>
 
   <body>
-    <div class="page-3">
-      <header class="page-content">
-        <!-- Logo or other content (not provided in snippet) -->
-        <div class="page-content-child"></div>
+    <div class="containernew">
+      <div class="page-3">
+        <header class="page-content">
+          <!-- Logo or other content (not provided in snippet) -->
+          <div class="page-content-child"></div>
 
-        <!-- About Us link -->
-        <div class="about-us-wrapper">
-          <a class="about-us3" id="aboutUsText" href="page-5.html">About Us</a>
-        </div>
+          <!-- About Us link -->
+          <div class="about-us-wrapper">
+            <a class="about-us3" id="aboutUsText" href="page-5.html"
+              >About Us</a
+            >
+          </div>
 
-        <!-- Team Standings link -->
-        <a class="team-standings2" id="teamStandingsText" href="page-2.html"
-          >Team Standings</a
-        >
-
-        <!-- Match Info section -->
-        <div class="match-info">
-          <a class="upcoming-match2" id="upcomingMatchText" href="page-3.html"
-            >Upcoming Match</a
+          <!-- Team Standings link -->
+          <a class="team-standings2" id="teamStandingsText" href="page-2.html"
+            >Team Standings</a
           >
-        </div>
 
-        <!-- Contact link -->
-        <a class="contact2" id="contactText" href="page-4.html">Contact</a>
+          <!-- Match Info section -->
+          <div class="match-info">
+            <a class="upcoming-match2" id="upcomingMatchText" href="page-3.html"
+              >Upcoming Match</a
+            >
+          </div>
 
-        <!-- GoaliesWatch link -->
-        <a class="goalieswatch2" id="goaliesWatchText" href="index.html"
-          >GoaliesWatch</a
-        >
-      </header>
+          <!-- Contact link -->
+          <a class="contact2" id="contactText" href="page-4.html">Contact</a>
 
-      <img
-        class="logo-icon2"
-        alt=""
-        src="./public/logo@2x.png"
-        id="logoImage"
-      />
+          <!-- GoaliesWatch link -->
+          <a class="goalieswatch2" id="goaliesWatchText" href="index.html"
+            >GoaliesWatch</a
+          >
+        </header>
 
-      <!--ROD added search bar-->
-    
-      <section class="group-wrapper">
-        <div class="group1">
+        <img
+          class="logo-icon2"
+          alt=""
+          src="./public/logo@2x.png"
+          id="logoImage"
+        />
+
+        <!--ROD added search bar-->
+
+        <section class="group-wrapper">
+          <div class="group1">
             <div class="bg"></div>
             <div class="input-group">
               <form id="searchForm">
@@ -170,29 +180,21 @@
                 />
                 <button type="submit">Search</button>
               </form>
-                
-                
             </div>
-        </div> 
-    </section> 
+          </div>
+        </section>
 
-    <div class="container">
-      
-      <div id="searchResults">
-        <!-- Results will be displayed here -->
+        <div class="container">
+          <div id="searchResults">
+            <!-- Results will be displayed here -->
+          </div>
+
+          <div id="weather"></div>
+
+          <div id="exchange-rates"></div>
+        </div>
       </div>
-
-      <div id="weather"></div>
-
-      <div id="exchange-rates"></div>
     </div>
-    
-
-      
-      
-      
-    </div>
-
     <script src="search.js"></script>
 
     <script>
