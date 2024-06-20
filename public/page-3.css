@@ -70,7 +70,10 @@
   position: absolute;
   margin: 0 !important;
   top: 22px;
-  left: -29.2px;
+  /*left: -29.2px;
+
+  ROD - fix padding */
+  left: 3px;
   font-size: var(--font-size-11xl);
   white-space: nowrap;
 }
@@ -3110,7 +3113,11 @@
   background-color: var(--color-midnightblue);
   overflow: hidden;
   flex-direction: column;
+  /*
   padding: 0 0 var(--padding-25xl) var(--padding-81xl);
+  */
+  /*ROD - fixed header*/
+  padding: 0 0 var(--padding-25xl) 70px;
   gap: 41px;
   line-height: normal;
   letter-spacing: normal;
@@ -3216,4 +3223,79 @@
     padding-left: var(--padding-xl);
     box-sizing: border-box;
   }
+}
+
+/*search bar*/
+
+/*search bar*/
+
+.input-group {
+  -webkit-box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  width: 100%;
+}
+
+
+.input-group-addon {
+  border: none;
+}
+
+.form-control {
+  height: 60px;
+  border-radius: 0;
+  border: none;
+  max-width: 100%;
+  width: 91%;
+}
+
+.form-control:focus {
+
+box-shadow: 0px 0px 0px 0px #ffffff !important;
+
+}
+
+.input-group .input-group-addon [type="submit"], .input-group .input-group-addon button {
+  border: none;
+  border-radius: 0;
+  border-radius: var(--br-xs);
+}
+
+.btn {
+  padding: 0 54px;
+  line-height: 60px;
+
+}
+
+
+.btn-primary {
+  padding: 0 28px;
+  line-height: 54px;
+  background: #ff6726;
+  color: #fff;
+
+ 
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #286090;
+  border-color: #204d74;
+}
+
+.input-group + p {
+  color: #fff;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.input-group + p strong {
+  margin-right: 40px;
+}
+
+h1 {
+  font-family: var(--font-poppins);
 }

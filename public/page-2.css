@@ -1519,8 +1519,9 @@
 }
 
 /* Styles for standings header */
+/*ROD - alignment for API standing*/
 .standings-header {
-  width: 1487px;
+  width: 700px;
   flex-direction: row;
   gap: var(--gap-30xl); /* Adjust gap between elements */
   max-width: 113%;
@@ -2147,6 +2148,17 @@
   font-size: var(--font-size-sm); /* Adjust font size */
   color: var(--color-darkslategray-100); /* Adjust text color */
   font-family: var(--font-oxanium); /* Adjust font family */
+}
+
+.group1 {
+  flex: 1;
+  box-shadow: var(--shadow);
+  background-color: var(--color-gray-500);
+  flex-wrap: wrap;
+  padding: var(--padding-17xl) var(--padding-16xl) var(--padding-17xl) 38px;
+  box-sizing: border-box;
+  gap: 27.6px;
+  max-width: 100%;
 }
 
 /* Styles for content 1 and page 2 */
