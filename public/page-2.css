@@ -31,7 +31,10 @@
   height: 48px;
   width: 296px;
   top: 22px;
+  /* ROD
   left: -29.2px;
+  */
+  left: 3px;
   white-space: nowrap;
 }
 
@@ -118,7 +121,10 @@
 
 /* Styling for .navigation1 */
 .navigation1 {
+  /* ROD
   width: 1339.8px;
+  */ 
+  width: 1365px;
   justify-content: flex-start;
   position: relative;
   font-size: var(--font-size-11xl); /* Using a CSS custom property */
