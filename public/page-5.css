@@ -24,7 +24,7 @@
   height: 48px;
   width: 296px;
   top: 22px;
-  left: -29.2px;
+  left: 3px;
   white-space: nowrap;
 }
 .contact {
@@ -291,7 +291,7 @@
   position: relative;
   background-color: var(--color-midnightblue);
   overflow: hidden;
-  padding: 0 0 47px var(--padding-81xl);
+  padding: 0 0 47px 70px;
   gap: var(--gap-30xl);
   line-height: normal;
   letter-spacing: normal;
