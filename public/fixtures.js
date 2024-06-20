@@ -35,6 +35,7 @@ const displayFixtures = (data) => {
         <p><strong>Result Info:</strong> ${fixture.result_info}</p>
         <p><strong>Venue:</strong> ${fixture.venue.name}</p>
         <p><strong>Address:</strong> ${fixture.venue.address}</p>
+        <br>
       `;
 
     fixtureDiv.innerHTML = fixtureHTML;

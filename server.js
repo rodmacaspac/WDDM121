@@ -21,7 +21,7 @@ app.get('/api/fixtures', async (req, res) => {
     const today = new Date();
     const endDate = today.toISOString().split("T")[0]; // Format: YYYY-MM-DD
     // Set the start date to fetch matches from a week ago
-    const startDate = new Date(today.setDate(today.getDate() - 24))
+    const startDate = new Date(today.setDate(today.getDate() - 28))
       .toISOString()
       .split("T")[0]; // Format: YYYY-MM-DD
 

@@ -26,7 +26,7 @@ const displayStandings = (data) => {
 
     row.innerHTML = `
       <td>${index + 1}</td>
-      <td><img src="${standing.participant.image_path}" alt="${standing.participant.name} Logo" class="team-logo"></td>
+      <td><img src="${standing.participant.image_path}" alt="${standing.participant.name} Logo" class="team-logo"width="100"></td>
       <td>${standing.participant.name}</td>
       <td>${standing.points}</td>
     `;
