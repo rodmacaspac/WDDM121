@@ -2945,154 +2945,9 @@
   padding: var(--padding-10xs) var(--padding-10xs) var(--padding-10xs)
     var(--padding-9xs);
 }
-.e-moraes {
-  position: relative;
-  line-height: 19px;
-  display: inline-block;
-  min-width: 63px;
-}
-.frame-parent16,
-.frame-parent30,
-.lineups {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.frame-parent30 {
-  align-items: center;
-}
-.frame-parent16,
-.lineups {
-  align-self: stretch;
-}
-.frame-parent16 {
-  align-items: center;
-  gap: var(--gap-3xl-1);
-  z-index: 1;
-}
-.lineups {
-  background-color: #29a96b;
-  overflow: hidden;
-  align-items: flex-start;
-  padding: var(--padding-base) var(--padding-4xl) 17.7px var(--padding-5xl);
-  position: relative;
-  gap: 33.7px;
-}
-.man-city2,
-.team-icon2 {
-  position: relative;
-  flex-shrink: 0;
-  debug_commit: 69da668;
-}
-.team-icon2 {
-  height: 22.1px;
-  width: 22.1px;
-  object-fit: cover;
-  min-height: 22px;
-}
-.man-city2 {
-  line-height: 22px;
-  font-weight: 500;
-  display: inline-block;
-  min-width: 66px;
-}
-.team-parent {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-sm-4);
-}
-.div21 {
-  position: relative;
-  line-height: 22px;
-  display: inline-block;
-  min-width: 58px;
-}
-.lineups-parent,
-.strat1 {
-  align-self: stretch;
-  display: flex;
-  align-items: flex-start;
-}
-.strat1 {
-  background-color: #1f9059;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: var(--padding-sm-3) var(--padding-lg) var(--padding-sm-3)
-    var(--padding-mid);
-  gap: var(--gap-xl);
-  z-index: 2;
-  text-align: left;
-  font-size: var(--font-size-base-5);
-}
-.lineups-parent {
-  flex-direction: column;
-  justify-content: flex-start;
-  text-align: center;
-  font-size: var(--font-size-sm-3);
-}
-.home-team-strat,
-.image-2-icon {
-  position: absolute;
-  overflow: hidden;
-}
-.home-team-strat {
-  width: 379.8px;
-  margin: 0 !important;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  border-radius: 8.86px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  z-index: 1;
-  text-align: left;
-  font-size: var(--font-size-base-5);
-  color: var(--white);
-}
-.image-2-icon {
-  width: calc(100% - 19.2px);
-  top: 12.1px;
-  right: 9.1px;
-  left: 10.1px;
-  max-width: 100%;
-  height: 239.5px;
-  object-fit: cover;
-}
-.card2-prematch2 {
-  height: 261.8px;
-  flex: 1;
-  position: relative;
-  border-radius: 11.41px;
-  background-color: var(--white);
-  max-width: 100%;
-}
-.card2-prematch-wrapper {
-  width: 586.1px;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: 0 54px;
-  box-sizing: border-box;
-  max-width: 100%;
-}
-.team-comparison-parent {
-  flex: 1;
-  flex-direction: column;
-  padding: var(--padding-11xs) var(--padding-12xs) 16.7px 339px;
-  position: relative;
-  gap: 5.4px;
-  max-width: 100%;
-  text-align: center;
-  font-size: var(--font-size-xl-1);
-  color: var(--black-black-12);
-  font-family: var(--font-inter);
-}
+
+
+
 .match-details,
 .page-3,
 .team-comparison-parent {
@@ -3325,6 +3180,25 @@ h1 {
   box-sizing: border-box;
   gap: 27.6px;
   max-width: 100%;
+  border: none;
+  border-radius: 0;
+  border-radius: var(--br-xs);
+}
+
+
+/*ROD results container*/
+.container {
+  display: flex;
+  flex-direction: row; /* This is the default, but explicitly stating it for clarity */
+  gap: 10px; /* Optional: adds space between the divs */
+}
+
+#searchResults, #weather, #exchange-rates{
+  flex: 1; /* This makes each div take equal space within the container */
+  padding: 10px; /* Optional: adds padding inside each div */
+  border: 1px solid #ccc; /* Optional: adds a border around each div */
+  box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+  background-color: var(--color-gray-500);
   border: none;
   border-radius: 0;
   border-radius: var(--br-xs);

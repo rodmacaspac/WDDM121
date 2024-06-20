@@ -2,6 +2,7 @@
 body {
   margin: 0; /* Remove default margin */
   line-height: normal; /* Set line height to normal */
+
 }
 
 /* Define custom CSS variables in :root */
