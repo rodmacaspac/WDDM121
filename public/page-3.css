@@ -3227,7 +3227,6 @@
 
 /*search bar*/
 
-/*search bar*/
 
 .input-group {
   -webkit-box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.1);
@@ -3304,7 +3303,7 @@ h1 {
 
 /*ROD*/
 .group-wrapper {
-  width: 1366px;
+  width: 1270px;
   flex-direction: row;
   align-items: flex-start;
   padding: 0 var(--padding-6xs);
@@ -3314,8 +3313,9 @@ h1 {
   font-size: var(--font-size-sm);
   color: var(--color-darkslategray-100);
   font-family: var(--font-oxanium);
+  
 }
-
+/*box border*/
 .group1 {
   flex: 1;
   box-shadow: var(--shadow);
@@ -3325,15 +3325,7 @@ h1 {
   box-sizing: border-box;
   gap: 27.6px;
   max-width: 100%;
-}
-
-.bg {
-  height: 144px;
-  width: 1352px;
-  position: relative;
-  box-shadow: var(--shadow);
+  border: none;
+  border-radius: 0;
   border-radius: var(--br-xs);
-  background-color: var(--color-gray-500);
-  display: none;
-  max-width: 100%;
 }
