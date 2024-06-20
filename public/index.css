@@ -124,7 +124,9 @@
   height: 48px; /* Height of the element */
   width: 296px; /* Width of the element */
   top: 22px; /* Distance from the top */
-  left: -29.2px; /* Distance from the left */
+  /*
+  left: -29.2px; */
+  left: 3;
   color: inherit; /* Inherit text color */
   display: inline-block; /* Display as inline-block */
   white-space: nowrap; /* No wrapping */
@@ -327,7 +329,9 @@
   overflow: hidden; /* Hide overflow content */
   flex-direction: column; /* Column layout */
   justify-content: flex-start; /* Justify content at the start */
-  padding: 0 0 var(--padding-25xl) var(--padding-81xl); /* Padding */
+  /* 
+  padding: 0 0 var(--padding-25xl) var(--padding-81xl); */
+  padding: 0 0 var(--padding-25xl) 70px;
   gap: 727px; /* Gap between sections */
   line-height: normal; /* Normal line height */
   letter-spacing: normal; /* Normal letter spacing */
