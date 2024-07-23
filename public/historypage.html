@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link href="/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Contact Form Firebase</h1>
+
+        <form action="#" id="contactForm">
+            <div class="alert">Your message sent</div>
+
+            <!--Enter name-->
+            <div class="inputBox">
+                <input type="text" id="name" placeholder="Your name...."/>
+            </div>
+
+            <!--Enter email-->
+            <div class="inputBox">
+                <input type="email" id="emailid" placeholder="Your email..."/>
+            </div>
+
+            <!--Enter a message-->
+            <div class="inputBox">
+                <textarea id="msgContent" cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
+
+            <!--Submit button-->
+            <div class="inputBox">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="/firebasedb.js"></script>
+</html>
