@@ -7543,6 +7543,8 @@ const currencyMap = {
   },
 };
 
+
+let team_name;
 // Handle form submission
 const searchForm = document.getElementById("searchForm");
 searchForm.addEventListener("submit", async (event) => {
@@ -7551,6 +7553,7 @@ searchForm.addEventListener("submit", async (event) => {
   // Get the team name input value
   const teamName = document.getElementById("teamName").value.trim();
   console.log(teamName);
+  team_name = teamName;
 
   try {
     const response = await fetch(
@@ -7690,4 +7693,54 @@ const displayCurrency = (data) => {
     exchangeRatesHTML += `<p><strong>${currency}:</strong> ${rate}</p>`;
   }
   exchangeRatesDiv.innerHTML = exchangeRatesHTML;
+
+  saveToDatabase();
 };
+
+
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBmgm8uG9CBHB8U4uVJNReSDh539kRO_Po",
+  authDomain: "wddm121-project.firebaseapp.com",
+  databaseURL: "https://wddm121-project-default-rtdb.firebaseio.com",
+  projectId: "wddm121-project",
+  storageBucket: "wddm121-project.appspot.com",
+  messagingSenderId: "511047255239",
+  appId: "1:511047255239:web:c0f391bbbb9971c5da6ae2",
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+//Create a location on database called contactForm
+var contactFormDB = firebase.database().ref("history");
+
+
+const saveToDatabase = () => {
+  
+  console.log("saveToDatabase: " + team_name);
+  
+//Pushing to our database ref on firebase
+var newContactForm = contactFormDB.push();
+
+//Set the values to push
+newContactForm.set({
+  team_name: team_name
+});
+
+};
+
+/*
+//Save the values entered to Firebase
+const saveMessages = (name, emailid, msgContent) => {
+  //Pushing to our database ref on firebase
+  var newContactForm = contactFormDB.push();
+
+  //Set the values to push
+  newContactForm.set({
+    name: name,
+    emailid: emailid,
+    msgContent: msgContent,
+  });
+};*/
