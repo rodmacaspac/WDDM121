@@ -7720,14 +7720,20 @@ var contactFormDB = firebase.database().ref("history");
 const saveToDatabase = () => {
   
   console.log("saveToDatabase: " + team_name);
-  
-//Pushing to our database ref on firebase
-var newContactForm = contactFormDB.push();
 
-//Set the values to push
-newContactForm.set({
-  team_name: team_name
-});
+  const currentDateTime = new Date();
+  const minusSixHours = new Date(currentDateTime.getTime() - 4 * 60 * 60 * 1000).toISOString();
+  console.log(`Current Date and Time: ${currentDateTime}`);
+  console.log(`Current Date and Time: ${minusSixHours}`);
+  
+  //Pushing to our database ref on firebase
+  var newContactForm = contactFormDB.push();
+
+  //Set the values to push
+  newContactForm.set({
+     team_name: team_name,
+     date_Time: minusSixHours
+  });
 
 };
 
