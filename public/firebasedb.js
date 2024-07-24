@@ -1,4 +1,4 @@
-
+// Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyBmgm8uG9CBHB8U4uVJNReSDh539kRO_Po",
   authDomain: "wddm121-project.firebaseapp.com",
@@ -11,49 +11,43 @@ const firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+const database = firebase.database();
 
-//Create a location on database called contactForm
-var contactFormDB = firebase.database().ref("contactForm");
+// Function to read data from Firebase and display it
+function fetchData() {
+  const cachedEmail = localStorage.getItem("signedInUserEmail") || "";
+  console.log("Cached email:", cachedEmail);
 
-document.getElementById("contactForm").addEventListener("submit", submitForm);
-
-//When we submit the form
-//Get the values that were entered in the form
-function submitForm(e) {
-  e.preventDefault(); //stop my form from submitting
-  //stay on same page
-
-  //extract the values
-  var name = getElementVal("name");
-  var emailid = getElementVal("emailid");
-  var msgContent = getElementVal("msgContent");
-
-  //save the values in firebase
-  saveMessages(name, emailid, msgContent);
-
-  document.querySelector(".alert").style.display = "block";
-
-  setTimeout(() => {
-    document.querySelector(".alert").style.display = "none";
-  }, 3000);
-
-  document.getElementById("contactForm").reset(); //clear the contact form
+  if (!cachedEmail) {
+    console.log('No cached email found.');
+    return;
 }
 
-//Save the values entered to Firebase
-const saveMessages = (name, emailid, msgContent) => {
-  //Pushing to our database ref on firebase
-  var newContactForm = contactFormDB.push();
+  const historyRef = database.ref("history");
+  historyRef.on(
+    "value",
+    (snapshot) => {
+      const data = snapshot.val();
+      const dataDisplay = document.getElementById("dataDisplay");
+      dataDisplay.innerHTML = ""; // Clear existing data
 
-  //Set the values to push
-  newContactForm.set({
-    name: name,
-    emailid: emailid,
-    msgContent: msgContent,
-  });
-};
+      let index = 1;
+      for (const key in data) {
+        if (data.hasOwnProperty(key) && cachedEmail == data[key].email) {
+          const entry = data[key];
+          const div = document.createElement("div");
+          div.innerText = `${index}, Team Name: ${entry.team_name}, Date and Time: ${entry.date_Time}`;
+          dataDisplay.appendChild(div);
+          index++;
+        }
+      }
+    },
+    (error) => {
+      console.error("Error reading data:", error);
+      document.getElementById("dataDisplay").innerText = "Error loading data";
+    }
+  );
+}
 
-//Get the value that was entered within the input
-const getElementVal = (id) => {
-  return document.getElementById(id).value;
-};
+// Call the function to fetch and display data
+fetchData();

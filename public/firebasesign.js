@@ -47,9 +47,16 @@ const signIn = () => {
       //Signed in
       document.write("You are Signed In");
       console.log(result);
+
+      saveEmailToCache(email);
     })
     .catch((error) => {
       console.log(error.code);
       console.log(error.message);
     });
+};
+
+const saveEmailToCache = (email) => {
+  localStorage.setItem('signedInUserEmail', email);
+  console.log('User email saved to cache');
 };
