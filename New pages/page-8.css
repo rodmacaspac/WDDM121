@@ -1,0 +1,240 @@
+.image-5-icon1 {
+  position: absolute;
+  top: 93px;
+  left: 0;
+  width: 1635px;
+  height: 1089px;
+  object-fit: cover;
+}
+.actions-area,
+.image-5-wrapper {
+  position: absolute;
+  margin: 0 !important;
+}
+.image-5-wrapper {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.actions-area {
+  height: 93px;
+  width: 1420px;
+  right: -1055px;
+  bottom: -26px;
+  background-color: var(--color-gray-100);
+}
+.goalieswatch1 {
+  text-decoration: none;
+  flex: 1;
+  position: relative;
+  color: inherit;
+  z-index: 1;
+}
+.actions-area-parent {
+  width: 296px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+}
+.logo-icon1 {
+  width: 125.2px;
+  height: 133.5px;
+  position: absolute;
+  margin: 0 !important;
+  top: -21px;
+  left: -25px;
+  object-fit: contain;
+  z-index: 2;
+}
+.frame-group {
+  align-self: stretch;
+  height: 112.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-3xl) var(--padding-52xl);
+  box-sizing: border-box;
+  position: relative;
+  text-align: left;
+  font-size: var(--font-size-11xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}
+.frame-child4,
+.search-history {
+  position: relative;
+  max-width: 100%;
+}
+.frame-child4 {
+  width: 1440px;
+  height: 931px;
+  background-color: var(--color-darkslateblue-200);
+  display: none;
+}
+.search-history {
+  margin: 0;
+  width: 502px;
+  font-size: inherit;
+  font-weight: 400;
+  font-family: inherit;
+  display: inline-block;
+  flex-shrink: 0;
+  z-index: 2;
+}
+.search-history-wrapper {
+  width: 1040px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 0 0 12px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.input-shape {
+  position: absolute;
+  top: 12.7px;
+  left: 12.4px;
+  border-radius: var(--br-smi);
+  background-color: var(--color-gainsboro-200);
+  border: 1px solid var(--color-gainsboro-200);
+  box-sizing: border-box;
+  width: 1029.6px;
+  height: 731.3px;
+}
+.input-shape1,
+.login-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.input-shape1 {
+  border-radius: var(--br-smi);
+  background-color: rgba(255, 255, 255, 0.65);
+  border: 1px solid rgba(108, 106, 106, 0.55);
+  box-sizing: border-box;
+  width: 1029.6px;
+  height: 725.5px;
+  z-index: 1;
+}
+.login-input {
+  width: 100%;
+  height: 100%;
+}
+.login-button-item {
+  height: 67px;
+  width: 281px;
+  position: relative;
+  border-radius: var(--br-smi);
+  background-color: var(--color-darkslateblue-100);
+  display: none;
+}
+.login1 {
+  flex: 1;
+  position: relative;
+  line-height: 15px;
+  font-weight: 500;
+  z-index: 1;
+}
+.login-button1 {
+  position: absolute;
+  top: 632px;
+  left: 385px;
+  border-radius: var(--br-smi);
+  background-color: var(--color-darkslateblue-100);
+  width: 281px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 27px 36px 25px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  z-index: 3;
+}
+.frame1 {
+  margin-top: -1px;
+  height: 742px;
+  flex: 1;
+  position: relative;
+  max-width: 100%;
+  z-index: 2;
+}
+.frame-wrapper {
+  width: 1040px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+  text-align: center;
+  font-size: var(--font-size-13xl);
+}
+.page-8,
+.rectangle-parent3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.rectangle-parent3 {
+  align-self: stretch;
+  background-color: var(--color-darkslateblue-200);
+  align-items: center;
+  padding: 52px var(--padding-xl) 48px 32px;
+  box-sizing: border-box;
+  max-width: 100%;
+  z-index: 1;
+  margin-top: -19.5px;
+}
+.page-8 {
+  width: 100%;
+  position: relative;
+  background-color: var(--color-midnightblue);
+  overflow: hidden;
+  align-items: flex-start;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  font-size: var(--font-size-41xl);
+  color: var(--color-white);
+  font-family: var(--font-poppins);
+}
+@media screen and (max-width: 925px) {
+  .goalieswatch1 {
+    font-size: var(--font-size-5xl);
+  }
+  .search-history {
+    font-size: var(--font-size-29xl);
+  }
+  .rectangle-parent3 {
+    padding-bottom: 31px;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 700px) {
+  .rectangle-parent3 {
+    padding-bottom: var(--padding-xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 450px) {
+  .goalieswatch1 {
+    font-size: var(--font-size-lg);
+  }
+  .frame-group {
+    padding-left: var(--padding-xl);
+    padding-right: var(--padding-xl);
+    box-sizing: border-box;
+  }
+  .search-history {
+    font-size: var(--font-size-17xl);
+  }
+}
