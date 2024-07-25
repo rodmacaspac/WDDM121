@@ -139,9 +139,6 @@ app.get('/page-4', (req, res) => {
 app.get('/page-5', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'page-5.html'));
 });
-app.get('/historypage', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'historypage.html'));
-});
 
 app.get('/page-6', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'page-6.html'));
