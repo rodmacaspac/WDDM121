@@ -238,3 +238,8 @@
     font-size: var(--font-size-17xl);
   }
 }
+#dataDisplay{
+  color: black;
+  font-size: 25px;
+  font-family: var(--font-poppins);
+}

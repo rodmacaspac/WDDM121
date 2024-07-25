@@ -34,13 +34,13 @@ function fetchData() {
       let index = 1;
       for (const key in data) {
         if (data.hasOwnProperty(key) && cachedEmail == data[key].email) {
-          const entry = data[key];
-          const div = document.createElement("div");
-          div.innerText = `${index}, Team Name: ${entry.team_name}, Date and Time: ${entry.date_Time}`;
-          dataDisplay.appendChild(div);
-          index++;
+            const entry = data[key];
+            const div = document.createElement("div");
+            div.innerHTML = `${index}: <strong>Team Name:</strong> ${entry.team_name}, <strong>Date and Time:</strong> ${entry.date_Time}`;
+            dataDisplay.appendChild(div);
+            index++;
         }
-      }
+    }
     },
     (error) => {
       console.error("Error reading data:", error);

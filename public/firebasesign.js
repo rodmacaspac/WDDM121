@@ -26,13 +26,17 @@ const signUp = () => {
     .createUserWithEmailAndPassword(email, password)
     .then((result) => {
       //If successful
-      document.write("You are Signed up");
+      
+      alert("You are Signed up");
+      window.location.href = "/";
       console.log(result);
     })
     .catch((error) => {
       //If error
       console.log(error.code);
       console.log(error.message);
+
+      alert("Invalid Input");
     });
 };
 
@@ -45,7 +49,9 @@ const signIn = () => {
     .signInWithEmailAndPassword(email, password)
     .then((result) => {
       //Signed in
-      document.write("You are Signed In");
+      alert("You are Logged In");
+      window.location.href = "/";
+
       console.log(result);
 
       saveEmailToCache(email);
@@ -53,10 +59,30 @@ const signIn = () => {
     .catch((error) => {
       console.log(error.code);
       console.log(error.message);
+
+      alert("Invalid Login Credentials");
     });
 };
 
 const saveEmailToCache = (email) => {
   localStorage.setItem('signedInUserEmail', email);
   console.log('User email saved to cache');
+};
+
+const signOut = () => {
+  firebase.auth().signOut().then(() => {
+      // Sign-out successful.
+      alert("You are Signed Out");
+      console.log("Signed out");
+      clearCache();
+  }).catch((error) => {
+      // An error happened.
+      alert(`Error: ${error.message}`);
+      console.error("Error signing out:", error);
+  });
+};
+
+const clearCache = () => {
+  localStorage.removeItem('signedInUserEmail');
+  console.log('Cache cleared');
 };

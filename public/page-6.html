@@ -10,13 +10,17 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
     />
+    
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.8.4/firebase-auth-compat.js"></script>
   </head>
   <body>
     <div class="page-6">
       <header class="frame-container">
         <div class="rectangle-parent4">
           <div class="frame-child5"></div>
-          <a class="goalieswatch2">GoaliesWatch</a>
+          <a class="goalieswatch2" href="/">GoaliesWatch</a>
         </div>
         <img class="logo-icon2" alt="" src="./public/logo@2x.png" />
       </header>
@@ -29,41 +33,90 @@
             <div class="input-background"></div>
             <div class="button-background-parent">
               <div class="button-background"></div>
+              
+              <div id="logindiv">
               <div class="login-button2">
                 <div class="login-button-inner"></div>
-                <h2 class="login2">Login</h2>
+                <h2 class="login2" id="submit-btn"
+                onclick="signIn()">Login</h2>
               </div>
+
               <div class="input-fields">
                 <div class="input-fields-child"></div>
                 <input
                   class="please-enter-your1"
                   placeholder="    Please Enter Your Password here"
                   type="text"
+                  id="password"
                 />
               </div>
+
               <div class="password1">Password</div>
+              
               <div class="input-fields1">
                 <div class="input-fields-item"></div>
                 <input
                   class="enter-your-email1"
                   placeholder="    Enter Your Email here"
                   type="text"
+                  id="email"
                 />
               </div>
               <a class="email1">Email</a>
-              <h1 class="login3">LOGIN</h1>
+              
               <div class="if-you-havnt-container">
                 <span class="if-you-havnt-container1">
                   <span class="if-you-havnt"
-                    >if you havn’t Registed yet ?
+                    >If you haven’t Registed yet ?
                   </span>
-                  <b class="register-now">Register Now</b>
+                
+                  <a class="register-now" href="/page-7">Register Now</b>
                 </span>
               </div>
+              
+            </div>
+
+            <div id="logoutdiv">
+              <div class="login-button2">
+                <div class="login-button-inner"></div>
+                <h2 class="login2" id="submit-btn"
+                onclick="signOut()">Logout</h2>
+              </div>
+
+
+              
+              <a class="email1"> </a>
+              
+              <div class="if-you-havnt-container">
+                <span class="if-you-havnt-container1">
+                  <span class="if-you-havnt"
+                    >You are already logged in.
+                  </span>
+                
+                </span>
+              </div>
+              
+            </div>
+            
+            <h1 class="login3" id="title">LOGIN</h1>
             </div>
           </div>
         </section>
       </main>
     </div>
+    
+    <script src="/firebasesign.js"></script>
+    <script>
+       const cachedEmail = localStorage.getItem("signedInUserEmail") || "";
+      console.log("Cached email:", cachedEmail);
+
+      if(cachedEmail!="")
+    {
+      console.log("Already logged in");
+      document.getElementById("title").innerText  = "LoggedIn";
+      document.getElementById("logindiv").style.display = "none";
+    }
+
+    </script>
   </body>
 </html>
