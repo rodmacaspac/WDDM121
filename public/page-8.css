@@ -271,3 +271,37 @@
 .data-row:last-child {
   margin-bottom: 0; /* Remove bottom margin for the last row */
 }
+.update-section {
+  margin-top: 10px;          /* Space above the update section */
+  display: flex;             /* Arrange input and button in a row */
+  gap: 10px;                 /* Space between the input field and button */
+  justify-content: center;   /* Center the input and button horizontally */
+  align-items: center;       /* Align input and button vertically */
+}
+
+.update-input {
+  flex: 0.8;               /* Make the input field take up available space */
+  padding: 5px;          /* Padding inside the input field */
+  border-radius: 5px;    /* Rounded corners */
+  border: 1px solid #ccc; /* Light border */
+  font-size: 14px;       /* Font size */
+}
+
+.update-button {
+  background-color: #3498db; /* Blue background */
+  color: white;              /* White text */
+  border: none;              /* No border */
+  padding: 5px 10px;         /* Padding for size */
+  border-radius: 5px;        /* Rounded corners */
+  cursor: pointer;           /* Pointer cursor on hover */
+  font-size: 14px;           /* Font size */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.update-button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.update-button:active {
+  background-color: #2471a3; /* Even darker blue when clicked */
+}

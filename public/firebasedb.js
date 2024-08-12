@@ -39,8 +39,12 @@ function fetchData() {
 
             div.classList.add("data-row");
             div.innerHTML = `${index}: <strong>Team Name:</strong> ${entry.team_name}, 
-                <strong>Date and Time:</strong> ${entry.date_Time} 
-                <button class="delete-button" onclick="deleteEntry('${key}')">Delete</button>`;
+                          <strong>Date and Time:</strong> ${entry.date_Time} 
+                          <button class="delete-button" onclick="deleteEntry('${key}')">Delete</button>
+                          <div class="update-section">
+                            <input type="text" class="update-input" id="update-${key}" placeholder="New Team Name" />
+                            <button class="update-button" onclick="updateTeamName('${key}')">Update</button>
+                          </div>`;
 
 
             dataDisplay.appendChild(div);
@@ -67,6 +71,25 @@ function deleteEntry(key) {
     .catch((error) => {
       console.error("Error deleting data:", error);
     });
+}
+
+// Function to update the team name in Firebase
+function updateTeamName(key) {
+  const newTeamName = document.getElementById(`update-${key}`).value.trim();
+
+  if (newTeamName) {
+    const historyRef = database.ref("history/" + key);
+    historyRef.update({ team_name: newTeamName })
+      .then(() => {
+        console.log("Team name updated successfully.");
+        fetchData(); // Refresh the displayed data
+      })
+      .catch((error) => {
+        console.error("Error updating team name:", error);
+      });
+  } else {
+    alert("Please enter a new team name.");
+  }
 }
 
 // Call the function to fetch and display data
