@@ -36,7 +36,13 @@ function fetchData() {
         if (data.hasOwnProperty(key) && cachedEmail == data[key].email) {
             const entry = data[key];
             const div = document.createElement("div");
-            div.innerHTML = `${index}: <strong>Team Name:</strong> ${entry.team_name}, <strong>Date and Time:</strong> ${entry.date_Time}`;
+
+            div.classList.add("data-row");
+            div.innerHTML = `${index}: <strong>Team Name:</strong> ${entry.team_name}, 
+                <strong>Date and Time:</strong> ${entry.date_Time} 
+                <button class="delete-button" onclick="deleteEntry('${key}')">Delete</button>`;
+
+
             dataDisplay.appendChild(div);
             index++;
         }
@@ -47,6 +53,20 @@ function fetchData() {
       document.getElementById("dataDisplay").innerText = "Error loading data";
     }
   );
+}
+
+
+// Function to delete an entry from Firebase
+function deleteEntry(key) {
+  const historyRef = database.ref("history/" + key);
+  historyRef.remove()
+    .then(() => {
+      console.log("Data removed successfully.");
+      fetchData(); // Refresh the displayed data
+    })
+    .catch((error) => {
+      console.error("Error deleting data:", error);
+    });
 }
 
 // Call the function to fetch and display data
