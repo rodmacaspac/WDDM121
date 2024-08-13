@@ -7544,6 +7544,7 @@ const currencyMap = {
 };
 
 
+
 let team_name;
 // Handle form submission
 const searchForm = document.getElementById("searchForm");
@@ -7606,7 +7607,9 @@ const displaySearchResults = (data) => {
         <p><strong>Address:</strong> ${team.venue.address}</p>
         <img src="${team.venue.image_path}" alt="${
     team.name
-  } Logo" class="team-logo" width="300">
+  } Logo" class="team-logo" id="stadium-image" width="300">
+
+      <button id="saveImageButton">Save Stadium Image</button>
         <p><strong>Latest Match:</strong> ${team.latest[0].name}</p>
         <p><strong>Starting At:</strong> ${formatDate(
           team.latest[0].starting_at
@@ -7649,6 +7652,9 @@ const displayWeather = (data) => {
  </div>
     `;
   weatherDiv.innerHTML = weatherHTML;
+
+  const saveImageButton = document.getElementById("saveImageButton");
+  saveImageButton.addEventListener("click", saveImageToStorage);
 
   getCurrency();
 };
@@ -7707,11 +7713,66 @@ const firebaseConfig = {
   projectId: "wddm121-project",
   storageBucket: "wddm121-project.appspot.com",
   messagingSenderId: "511047255239",
-  appId: "1:511047255239:web:c0f391bbbb9971c5da6ae2",
+  appId: "1:511047255239:web:c0f391bbbb9971c5da6ae2"
 };
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+const storage = firebase.storage();
+
+
+
+const saveImageToStorage = () => {
+  console.log("saveImageToStorage");
+  
+  // Get the stadium image element
+  const stadiumImage = document.querySelector("#stadium-image");
+
+  // If no image found, return
+  if (!stadiumImage) {
+    console.error("Stadium image not found.");
+    return;
+  }
+
+  // Get the image URL
+  const imageUrl = stadiumImage.src;
+
+  // Create a reference in Firebase Storage
+  const storageRef = storage.ref();
+  const stadiumImageRef = storageRef.child(`stadium_images/${team_name}_stadium.jpg`);
+
+  // Fetch the image as a Blob
+  fetch(imageUrl)
+    .then((response) => response.blob())
+    .then((blob) => {
+      // Upload the image Blob to Firebase Storage
+      const uploadTask = stadiumImageRef.put(blob);
+
+      // Monitor the upload process
+      uploadTask.on(
+        "state_changed",
+        (snapshot) => {
+          // Monitor upload progress
+          const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          console.log("Upload is " + progress + "% done");
+        },
+        (error) => {
+          // Handle upload errors
+          console.error("Error uploading image:", error);
+        },
+        () => {
+          // Handle successful uploads
+          uploadTask.snapshot.ref.getDownloadURL().then((downloadURL) => {
+            console.log("Image uploaded successfully. Download URL:", downloadURL);
+            alert("Stadium image saved successfully!");
+          });
+        }
+      );
+    })
+    .catch((error) => {
+      console.error("Error fetching image:", error);
+    });
+};
 
 //Create a location on database called contactForm
 var contactFormDB = firebase.database().ref("history");
@@ -7742,17 +7803,3 @@ const saveToDatabase = () => {
   });
 
 };
-
-/*
-//Save the values entered to Firebase
-const saveMessages = (name, emailid, msgContent) => {
-  //Pushing to our database ref on firebase
-  var newContactForm = contactFormDB.push();
-
-  //Set the values to push
-  newContactForm.set({
-    name: name,
-    emailid: emailid,
-    msgContent: msgContent,
-  });
-};*/
