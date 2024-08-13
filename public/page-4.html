@@ -156,27 +156,47 @@
               <div class="frame-inner"></div>
               <input
                 class="phone-number"
-                placeholder="Phone Number*"
+                placeholder="Stadium Name*"
                 type="text"
               />
             </div>
             <div class="component-4">
               <div class="component-4-child"></div>
-              <div class="your-message">Your message...</div>
+              <input
+                class="phone-number"
+                placeholder="Message*"
+                type="text"
+              />
               <img class="component-4-item" alt="" />
 
               <img class="component-4-inner" loading="lazy" alt="" />
             </div>
+            <div class="address-details">
+              <div class="address">
+                <img
+                  class="address-child"
+                  loading="lazy"
+                  alt=""
+                  src="./public/group-3893.svg"
+                />
+              </div>
+              <b class="arthur-ave-elk-container">
+                <p class="arthur-ave-elk">Upload Image of Stadium</p>
+              </b>
+            </div>
+            <input type="file" id="imageUpload" accept="image/*" />
           </div>
 
           <!-- Submit button -->
-          <button class="submit-button-container" id="submitButtonContainer">
-            <b class="send-message">Send Message</b>
+          <button class="submit-button-container" id="uploadButton">
+            <b class="send-message">Send Request</b>
           </button>
         </div>
       </section>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+   <script src="newstadiumrequest.js"></script>
     <!-- JavaScript for handling click events -->
     <script>
       // Click event for logo image
