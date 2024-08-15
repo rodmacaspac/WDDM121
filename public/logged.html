@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <!-- External stylesheets -->
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <!-- Google Fonts stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open Sans:wght@400;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Abel:wght@500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Adamina:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space Grotesk:wght@700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" />
+  </head>
+  <body>
+    <!-- Main container -->
+    <div class="page-1">
+      <!-- Static image -->
+      <img class="HomePageCover" alt="" src="./public/HomePageCover.png" />
+
+      <!-- Main content section -->
+      <main class="image-1-parent">
+        <!-- Another image -->
+        <img class="HomePageCover2" alt="" src="./public/HomePageCover.png" />
+
+        <!-- Placeholder elements (empty divs) -->
+        <div class="frame-child3"></div>
+        <div class="frame-child4"></div>
+        <div class="frame-child5"></div>
+        <div class="frame-child6"></div>
+        <div class="frame-child7"></div>
+        <div class="frame-child8"></div>
+
+        <!-- Logo image -->
+        <img class="logo-icon10" alt="" src="./public/logo@2x.png" />
+
+      </main>
+
+      <!-- Header section -->
+      <header class="goalieswatch-parent">
+        <!-- Site title -->
+        <a class="goalieswatch4" href="/">GoaliesWatch</a>
+
+        <!-- Navigation links -->
+        <nav class="standings-info">
+          <div class="standings-info-child"></div>
+          <a class="standings2" id="standingsText" href="page-2">Standings</a>
+          <a class="upcoming-match4" id="upcomingMatchText" href="page-3">Upcoming Match</a>
+          <a class="standings2" id="standingsText" href="page-6">Login/Sign Up</a>
+          <a class="upcoming-match4" id="upcomingMatchText" href="page-8">Search History</a>
+          <a class="about-us6" id="aboutUsText" href="page-5">About Us</a>
+          <!-- Contact link -->
+          <a class="contact4" id="contactText" href="page-4">Contact</a>
+        </nav>
+      </header>
+
+      <!-- Inner content section -->
+      <div class="page-1-inner">
+        <div class="the-moment-is-yours-parent">
+          <!-- Main heading -->
+          <h1 class="the-moment-is">The Moment Is Yours</h1>
+
+          <!-- Button for exploration -->
+          <div class="frame-wrapper2">
+            <button class="group-button" id="groupButton">
+              <div class="frame-child9"></div>
+              <div class="wrapper-group-41">
+                <!-- Icon inside the button -->
+                <img class="wrapper-group-41-child" alt="" src="./public/group-41.svg" />
+              </div>
+              <!-- Text inside the button -->
+              <div class="explore-promo">
+                <div class="explore">EXPLORE</div>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript section -->
+    <script>
+      // JavaScript to handle clicking on contact text
+      var contactText = document.getElementById("contactText");
+      if (contactText) {
+        contactText.addEventListener("click", function (e) {
+          window.location.href = "./page-2.html";
+        });
+      }
+
+      var contactText1 = document.getElementById("groupButton");
+      if (contactText1) {
+        contactText1.addEventListener("click", function (e) {
+          window.location.href = "./page-2.html";
+        });
+      }
+      
+      // JavaScript to handle clicking on about us text
+      var aboutUsText = document.getElementById("aboutUsText");
+      if (aboutUsText) {
+        aboutUsText.addEventListener("click", function (e) {
+          window.location.href = "./page-2.html";
+        });
+      }
+      
+      // JavaScript to handle clicking on standings text
+      var standingsText = document.getElementById("standingsText");
+      if (standingsText) {
+        standingsText.addEventListener("click", function (e) {
+          window.location.href = "./page-3.html";
+        });
+      }
+      
+      // JavaScript to handle clicking on upcoming match text
+      var upcomingMatchText = document.getElementById("upcomingMatchText");
+      if (upcomingMatchText) {
+        upcomingMatchText.addEventListener("click", function (e) {
+          window.location.href = "./page-2.html";
+        });
+      }
+    </script>
+  </body>
+</html>

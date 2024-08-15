@@ -50,8 +50,8 @@ const signIn = () => {
     .then((result) => {
       //Signed in
       alert("You are Logged In");
-      window.location.href = "/";
-
+      window.location.href = "/logged";
+      
       console.log(result);
 
       saveEmailToCache(email);

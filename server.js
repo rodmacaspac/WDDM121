@@ -1,6 +1,8 @@
 const express = require('express');
 const cors = require('cors');
 const path = require('path');
+const session = require('express-session');
+const cookieParser = require('cookie-parser');
 
 const app = express();
 const port = 3000;
@@ -13,6 +15,22 @@ const seasonId = "19735";
 
 app.use(cors());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.json());
+app.use(cookieParser());
+app.use(session({
+  secret: 'b349e9aaf98',
+  resave: false,
+  saveUninitialized: true,
+}));
+
+// Middleware to check if user is authenticated
+function isAuthenticated(req, res, next) {
+  if (req.session.loggedin) {
+    return next();
+  } else {
+    res.redirect('/page-6');
+  }
+}
 
 app.get('/api/fixtures', async (req, res) => {
   const fetch = (await import('node-fetch')).default; // Dynamic import
@@ -127,10 +145,13 @@ app.get('/test', (req, res) => {
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
-app.get('/page-2', (req, res) => {
+
+
+app.get('/page-2', isAuthenticated, (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'page-2.html'));
 });
-app.get('/page-3', (req, res) => {
+
+app.get('/page-3',isAuthenticated, (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'page-3.html'));
 });
 app.get('/page-4', (req, res) => {
@@ -144,12 +165,18 @@ app.get('/page-6', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'page-6.html'));
 });
 
+
 app.get('/page-7', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'page-7.html'));
 });
 
-app.get('/page-8', (req, res) => {
+app.get('/page-8', isAuthenticated, (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'page-8.html'));
+});
+
+app.get('/logged', (req, res) => {
+  req.session.loggedin = true;
+  res.sendFile(path.join(__dirname, 'public', 'logged.html'));
 });
 
 app.listen(port, () => {
