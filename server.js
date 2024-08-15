@@ -28,7 +28,7 @@ function isAuthenticated(req, res, next) {
   if (req.session.loggedin) {
     return next();
   } else {
-    res.redirect('/page-6');
+    res.redirect('/page-6?message=You must log in to view this page');
   }
 }
 
